@@ -88,12 +88,14 @@ NYC_Project/
 │   └── data/                       # Processed, merged, and cleaned datasets (parquet file)
 |   |
 │   └── report/ 
-|       └── holiday_crashes_profiling_report.html        # html report created by ydata-profiling
+|       └── holiday_crashes_profiling_report.html        # html report created by ydata-profiling library
 │
 ├── presentation/                  # Presentation materials (slides, PDFs)
 |   └── NYC_Collisions_Holidays_Presentation.pptx 
 │
 ├── Full_Pipeline.py               # Master Python script to execute the full pipeline
+|
+├── requirements.txt               # requirements to install
 |
 └── README.md                      # Detailed project documentation
 ```
