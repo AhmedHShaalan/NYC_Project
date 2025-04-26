@@ -95,7 +95,7 @@ NYC_Project/
 │
 ├── Full_Pipeline.py               # Master Python script to execute the full pipeline
 |
-├── requirements.txt               # requirements to install
+├── prerequisites.txt               # requirements to install
 |
 └── README.md                      # Detailed project documentation
 ```
