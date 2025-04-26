@@ -23,7 +23,7 @@ The workflow follows a complete data engineering and analytics pipeline: from da
   - Reason for collision (contributing factors)
   - Count of injuries and fatalities
 - **Format:** CSV files
-- **Storage:** Located under `assets/Crashes_Collisions_Dataset/`
+- **Storage:** you can download it from here : (https://catalog.data.gov/dataset/motor-vehicle-collisions-crashes#:~:text=The%20Motor%20Vehicle%20Collisions%20crash,motor%20vehicle%20collisions%20in%20NYC)`
 
 ### 2. Public Holidays Data
 
@@ -32,7 +32,7 @@ The workflow follows a complete data engineering and analytics pipeline: from da
   - Holiday name
   - Affected counties
   - Type of holiday (Public/Federal/etc.)
-- **Source:** API from [dager.ai](https://dager.ai)
+- **Source:** API from [dager.ai](https://publicapis.io/nager-date-api)
 - **Format:** JSON files converted into DataFrames
 
 ### 3. NYC Borough Boundaries
@@ -91,6 +91,7 @@ NYC_Project/
 |       └── holiday_crashes_profiling_report.html        # html report created by ydata-profiling
 │
 ├── presentation/                  # Presentation materials (slides, PDFs)
+|   └── NYC_Collisions_Holidays_Presentation.pptx 
 │
 ├── Full_Pipeline.py               # Master Python script to execute the full pipeline
 |
@@ -104,7 +105,7 @@ NYC_Project/
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/yourusername/NYC_Project.git
+   git clone https://github.com/AhmedHShaalan/NYC_Project.git
    cd NYC_Project
    ```
 
