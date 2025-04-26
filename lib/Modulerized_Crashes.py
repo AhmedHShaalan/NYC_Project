@@ -65,6 +65,7 @@ def correlation_matrix_exploration(df : pd.DataFrame ,d_columns: list = None,plo
 
 def preparing_crashes_data(df_crashes: pd.DataFrame,start_year: int = datetime.now().year ,num_years: int =0) -> pd.DataFrame:
     try:
+       
         ## columns names after formating
         df_crashes.columns = df_crashes.columns.str.replace(' ', '_').str.lower()
         logging.info(f"Columns are reformatted successfully!")
@@ -277,8 +278,32 @@ def create_dimension_contributing_factors(df,contributing_factors):
     
     return dim_factors, factor_map
 
+def create_dimension_severity(df,severity):
+    
+    all_severity = pd.concat([df[col] for col in severity], axis=0)
+    unique_severity = sorted(all_severity.dropna().str.strip().unique())
+    dim_severity = pd.DataFrame({
+        'severity_id': range(1, len(unique_severity) + 1),
+        'severity_description': unique_severity
+    })
 
-## we will not use this and we can clean it from numeric values
+    severity_map = dict(zip(dim_severity['severity_description'], dim_severity['severity_id']))
+    
+    return dim_severity, severity_map
+
+
+def create_dimension_location_type(df,location_type):
+    
+    all_location_type = pd.concat([df[col] for col in location_type], axis=0)
+    unique_location_type = sorted(all_location_type.dropna().str.strip().unique())
+    dim_location_type = pd.DataFrame({
+        'location_type_id': range(1, len(unique_location_type) + 1),
+        'location_type_description': unique_location_type
+    })
+
+    location_type_map = dict(zip(dim_location_type['location_type_description'], dim_location_type['location_type_id']))
+    
+    return dim_location_type, location_type_map
 
 def create_dimension_vehicle_types(df,vehicles_columns):
     
@@ -311,31 +336,67 @@ def create_dimension_borough(df,borough_column):
 # to create data model of facts and dimensions after cleansing and merging 
 def create_data_model(Main_Table_df): 
     # contributing factors dimension
-    contributing_factors =[f"contributing_factor_vehicle_{i}" for i in range(1,6)]
-    dim_contributing_factors , factor_map = create_dimension_contributing_factors(Main_Table_df,contributing_factors)
-    for contributing_factor in contributing_factors:
-        fk_col = contributing_factor + '_id'
-        Main_Table_df[fk_col] = Main_Table_df[contributing_factor].str.strip().map(factor_map)
+    try :
+        contributing_factors =[f"contributing_factor_vehicle_{i}" for i in range(1,6)]
+        dim_contributing_factors , factor_map = create_dimension_contributing_factors(Main_Table_df,contributing_factors)
+        for contributing_factor in contributing_factors:
+            fk_col = contributing_factor + '_id'
+            Main_Table_df[fk_col] = Main_Table_df[contributing_factor].str.strip().map(factor_map)
+    except Exception as e :
+        logging.error(f" error in contributing factors dimension {e}")
 
     # vehicle types dimension 
-    vehicles_columns =[f"vehicle_type_code_{i}" for i in range(1,6)]
-    dim_vehicle_types , vehicle_type_map = create_dimension_vehicle_types(Main_Table_df,vehicles_columns)
-    for vehicles_column in vehicles_columns:
-        fk_col = vehicles_column + '_id'
-        Main_Table_df[fk_col] = Main_Table_df[vehicles_column].str.strip().map(vehicle_type_map)
+    try:
+        vehicles_columns =[f"vehicle_type_code_{i}" for i in range(1,6)]
+        dim_vehicle_types , vehicle_type_map = create_dimension_vehicle_types(Main_Table_df,vehicles_columns)
+        for vehicles_column in vehicles_columns:
+            fk_col = vehicles_column + '_id'
+            Main_Table_df[fk_col] = Main_Table_df[vehicles_column].str.strip().map(vehicle_type_map)
+
+    except Exception as e :
+        logging.error(f" error in vehicle type dimension {e}")
 
     # borough dimension 
-    borough_columns =['BoroName']
-    dim_boroughs, borough_map = create_dimension_borough(Main_Table_df,borough_columns)
-    for borough_column in borough_columns:
-        fk_col = borough_column + '_id'
-        Main_Table_df[fk_col] = Main_Table_df[borough_column].str.strip().map(borough_map)
+    try:
+        borough_columns =['BoroName']
+        dim_boroughs, borough_map = create_dimension_borough(Main_Table_df,borough_columns)
+        for borough_column in borough_columns:
+            fk_col = borough_column + '_id'
+            Main_Table_df[fk_col] = Main_Table_df[borough_column].str.strip().map(borough_map)
+    except Exception as e :
+        logging.error(f" error in borough dimension {e}")
 
+    # location type dimension
+    try:
+        location_type_columns =['location_type']
+        dim_location_type, location_type_map = create_dimension_location_type(Main_Table_df,location_type_columns)
+        for location_type_column in location_type_columns:
+            fk_col = location_type_column + '_id'
+            Main_Table_df[fk_col] = Main_Table_df[location_type_column].str.strip().map(location_type_map)
+    except Exception as e :
+        logging.error(f" error in location type dimension {e}")
+
+    # severity dimension
+    try:
+        severity_columns =['severity']
+        dim_severity, severity_map = create_dimension_severity(Main_Table_df,severity_columns)
+        for severity_column in severity_columns:
+            fk_col = severity_column + '_id'
+            Main_Table_df[fk_col] = Main_Table_df[severity_column].str.strip().map(severity_map)
+
+    except Exception as e :
+        logging.error(f" error in severity dimension {e}")
     # Crashes and Holidays fact 
-    fact_Crashes_holidays = Main_Table_df.drop(columns=contributing_factors)
-    fact_Crashes_holidays = fact_Crashes_holidays.drop(columns=vehicles_columns)
-    fact_Crashes_holidays = fact_Crashes_holidays.drop(columns=borough_columns)
 
-    return fact_Crashes_holidays , dim_contributing_factors, dim_vehicle_types,dim_boroughs
+    try:
+        fact_Crashes_holidays = Main_Table_df.drop(columns=contributing_factors)
+        fact_Crashes_holidays = fact_Crashes_holidays.drop(columns=vehicles_columns)
+        fact_Crashes_holidays = fact_Crashes_holidays.drop(columns=borough_columns)
+        fact_Crashes_holidays = fact_Crashes_holidays.drop(columns=location_type_columns)
+        fact_Crashes_holidays = fact_Crashes_holidays.drop(columns=severity_columns)
+    except Exception as e :
+        logging.error(f" error in fact table {e}")
+
+    return fact_Crashes_holidays , dim_contributing_factors, dim_vehicle_types,dim_boroughs,dim_location_type,dim_severity
     
 

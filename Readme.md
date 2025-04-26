@@ -81,7 +81,14 @@ NYC_Project/
 │
 ├── out/                            # Outputs from the project
 │   ├── Charts/                     # Generated plots and charts
-│   └── data/                       # Processed, merged, and cleaned datasets
+|       └── Borough_Collisions.png        
+|       └── nyc_collisions_by_public_holiday_by_year.png       
+|       └── nyc_collisions_by_public_holiday.png        
+|       └── nyc_collisions_by_year.png       
+│   └── data/                       # Processed, merged, and cleaned datasets (parquet file)
+|   |
+│   └── report/ 
+|       └── holiday_crashes_profiling_report.html        # html report created by ydata-profiling
 │
 ├── presentation/                  # Presentation materials (slides, PDFs)
 │

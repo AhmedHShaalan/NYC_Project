@@ -122,23 +122,18 @@ def main():
 
         logging.info("Final Result")
 
-        # Cr.correlation_matrix_exploration(cleand_merged_final,d_columns=['location', 'latitude','longitude','borough'],plot_corr=True)
-
-
-        #some statistics 
-        # from pandas_profiling import ProfileReport  # Original fork
-            # from numba import config
-            # config.DISABLE_JIT = True 
 
         # Export Parquet file
         Cleaned_merged_df.to_parquet(r'out\data\Cleaned_merged_df.parquet')
+
+        # generate Report with more insights
         
         # Cleaned_merged_df = pd.DataFrame(Cleaned_merged_df)
 
         # from ydata_profiling import ProfileReport
         # profile = ProfileReport(Cleaned_merged_df, title="Holiday Data and Crashes Profiling Report", explorative=True)
 
-        # profile.to_file(r"D:\AhmedShaalan\Uptimal\Final_Project\holiday_crashes_profiling_report.html")   
+        # profile.to_file(r"out\holiday_crashes_profiling_report.html")   
         # chart 1 
 
         yearly_counts = Cleaned_merged_df['crash_year'].value_counts().sort_index()
@@ -152,7 +147,53 @@ def main():
         plt.xticks(yearly_counts.index)
         plt.tight_layout()
         plt.savefig(r'out\charts\nyc_collisions_by_year.png', dpi=300, bbox_inches='tight')
-        
+
+        # Chart 2
+
+        # Chart Collisions vs Public Holidays
+        holiday_crashes_1 = Cleaned_merged_df.dropna(subset=['holiday_name'])
+
+        # Group by holiday name
+        holiday_counts_1 = holiday_crashes_1.groupby('holiday_name').size().reset_index(name='collision_count')
+
+        # Sort by collision count
+        holiday_counts = holiday_counts_1.sort_values(by='collision_count', ascending=False)
+
+        # Plot
+        plt.figure(figsize=(14, 8))
+        sns.barplot(data=holiday_counts, y='holiday_name', x='collision_count', palette='magma')
+        plt.title('Collisions in NYC by Public Holiday')
+        plt.xlabel('Number of Collisions')
+        plt.ylabel('Holiday')
+        plt.grid(axis='x')
+        plt.tight_layout()
+        plt.savefig(r'out\charts\nyc_collisions_by_public_holiday.png', dpi=300, bbox_inches='tight')
+
+        # Chart 3
+
+        # Collisions by Year by Public  Holiday
+        holiday_crashes_2 = Cleaned_merged_df.dropna(subset=['holiday_name'])
+
+        # Group by holiday name and year
+        holiday_yearly_counts = holiday_crashes_2.groupby(['holiday_name', 'crash_year']).size().reset_index(name='collision_count')
+
+        # Now, calculate average collisions per holiday
+        holiday_avg = holiday_yearly_counts.groupby('holiday_name')['collision_count'].mean().reset_index()
+
+        # Sort by average collisions
+        holiday_avg = holiday_avg.sort_values('collision_count', ascending=False)
+
+        # Plot
+        plt.figure(figsize=(14, 8))
+        sns.barplot(data=holiday_avg, y='holiday_name', x='collision_count', palette='coolwarm')
+        plt.title('Average Collisions per Year by Holiday (Normalized)')
+        plt.xlabel('Average Number of Collisions')
+        plt.ylabel('Holiday')
+        plt.grid(axis='x')
+        plt.tight_layout()
+        plt.savefig(r'out\charts\nyc_collisions_by_public_holiday_by_year.png', dpi=300, bbox_inches='tight')
+                
+        # Chart 4 
 
         ### Pandemic Effect around 50% of number of collisions decreased 
 
