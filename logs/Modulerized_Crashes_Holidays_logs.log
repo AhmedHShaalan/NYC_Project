@@ -1,17 +1,17 @@
- 2025-04-26 05:08:28,751 - INFO - 
+ 2025-04-26 07:52:40,429 - INFO - 
 
 
 
  Crashes and Collisions Data 
 
- 2025-04-26 05:08:28,751 - INFO - Loading Crashes Data 
- 2025-04-26 05:08:28,751 - INFO - new run
- 2025-04-26 05:08:34,834 - INFO - Crash data loaded successfully.
- 2025-04-26 05:08:34,834 - INFO -  Crashes and Collisions Data Exploration
- 2025-04-26 05:08:34,834 - INFO - shape of data after loading (2169687, 29)
- 2025-04-26 05:08:34,834 - INFO - Data preview:
- 2025-04-26 05:08:34,834 - INFO - Data shape: (2169687, 29)
- 2025-04-26 05:08:34,835 - INFO - Data types:
+ 2025-04-26 07:52:40,429 - INFO - Loading Crashes Data 
+ 2025-04-26 07:52:40,429 - INFO - new run
+ 2025-04-26 07:52:48,232 - INFO - Crash data loaded successfully.
+ 2025-04-26 07:52:48,232 - INFO -  Crashes and Collisions Data Exploration
+ 2025-04-26 07:52:48,232 - INFO - shape of data after loading (2169687, 29)
+ 2025-04-26 07:52:48,232 - INFO - Data preview:
+ 2025-04-26 07:52:48,232 - INFO - Data shape: (2169687, 29)
+ 2025-04-26 07:52:48,238 - INFO - Data types:
 CRASH DATE                        object
 CRASH TIME                        object
 BOROUGH                           object
@@ -42,8 +42,8 @@ VEHICLE TYPE CODE 3               object
 VEHICLE TYPE CODE 4               object
 VEHICLE TYPE CODE 5               object
 dtype: object
- 2025-04-26 05:08:34,835 - INFO - Column names: ['CRASH DATE', 'CRASH TIME', 'BOROUGH', 'ZIP CODE', 'LATITUDE', 'LONGITUDE', 'LOCATION', 'ON STREET NAME', 'CROSS STREET NAME', 'OFF STREET NAME', 'NUMBER OF PERSONS INJURED', 'NUMBER OF PERSONS KILLED', 'NUMBER OF PEDESTRIANS INJURED', 'NUMBER OF PEDESTRIANS KILLED', 'NUMBER OF CYCLIST INJURED', 'NUMBER OF CYCLIST KILLED', 'NUMBER OF MOTORIST INJURED', 'NUMBER OF MOTORIST KILLED', 'CONTRIBUTING FACTOR VEHICLE 1', 'CONTRIBUTING FACTOR VEHICLE 2', 'CONTRIBUTING FACTOR VEHICLE 3', 'CONTRIBUTING FACTOR VEHICLE 4', 'CONTRIBUTING FACTOR VEHICLE 5', 'COLLISION_ID', 'VEHICLE TYPE CODE 1', 'VEHICLE TYPE CODE 2', 'VEHICLE TYPE CODE 3', 'VEHICLE TYPE CODE 4', 'VEHICLE TYPE CODE 5']
- 2025-04-26 05:08:37,398 - INFO - Missing values percentage 
+ 2025-04-26 07:52:48,238 - INFO - Column names: ['CRASH DATE', 'CRASH TIME', 'BOROUGH', 'ZIP CODE', 'LATITUDE', 'LONGITUDE', 'LOCATION', 'ON STREET NAME', 'CROSS STREET NAME', 'OFF STREET NAME', 'NUMBER OF PERSONS INJURED', 'NUMBER OF PERSONS KILLED', 'NUMBER OF PEDESTRIANS INJURED', 'NUMBER OF PEDESTRIANS KILLED', 'NUMBER OF CYCLIST INJURED', 'NUMBER OF CYCLIST KILLED', 'NUMBER OF MOTORIST INJURED', 'NUMBER OF MOTORIST KILLED', 'CONTRIBUTING FACTOR VEHICLE 1', 'CONTRIBUTING FACTOR VEHICLE 2', 'CONTRIBUTING FACTOR VEHICLE 3', 'CONTRIBUTING FACTOR VEHICLE 4', 'CONTRIBUTING FACTOR VEHICLE 5', 'COLLISION_ID', 'VEHICLE TYPE CODE 1', 'VEHICLE TYPE CODE 2', 'VEHICLE TYPE CODE 3', 'VEHICLE TYPE CODE 4', 'VEHICLE TYPE CODE 5']
+ 2025-04-26 07:52:51,476 - INFO - Missing values percentage 
 VEHICLE TYPE CODE 5              99.564177
 CONTRIBUTING FACTOR VEHICLE 5    99.550212
 VEHICLE TYPE CODE 4              98.414149
@@ -74,12 +74,12 @@ NUMBER OF PEDESTRIANS KILLED      0.000000
 NUMBER OF PEDESTRIANS INJURED     0.000000
 NUMBER OF CYCLIST INJURED         0.000000
 dtype: float64
- 2025-04-26 05:08:37,398 - INFO - Crashes and Collisions Data Preparation 
- 2025-04-26 05:08:37,399 - INFO - Columns are reformatted successfully!
- 2025-04-26 05:08:37,728 - INFO - Date is reformatted successfully!
- 2025-04-26 05:08:38,018 - INFO - Time is reformatted successfully!
- 2025-04-26 05:08:39,626 - INFO - Data Types are converted successfully!
- 2025-04-26 05:08:39,626 - INFO - Data types after preprocessing :
+ 2025-04-26 07:52:51,476 - INFO - Crashes and Collisions Data Preparation 
+ 2025-04-26 07:52:51,476 - INFO - Columns are reformatted successfully!
+ 2025-04-26 07:52:51,917 - INFO - Date is reformatted successfully!
+ 2025-04-26 07:52:52,312 - INFO - Time is reformatted successfully!
+ 2025-04-26 07:52:54,268 - INFO - Data Types are converted successfully!
+ 2025-04-26 07:52:54,268 - INFO - Data types after preprocessing :
 crash_date                       datetime64[ns]
 crash_time                               object
 borough                                category
@@ -114,11 +114,11 @@ crash_day                                object
 crash_month                              object
 crash_year                                int64
 dtype: object
- 2025-04-26 05:08:39,627 - INFO - preprocessing has been done successfully
- 2025-04-26 05:08:40,429 - INFO - shape of data after preprocessing (2169687, 33)
- 2025-04-26 05:08:40,429 - INFO - Data preview:
- 2025-04-26 05:08:40,429 - INFO - Data shape: (2169687, 33)
- 2025-04-26 05:08:40,430 - INFO - Data types:
+ 2025-04-26 07:52:54,268 - INFO - preprocessing has been done successfully
+ 2025-04-26 07:52:55,215 - INFO - shape of data after preprocessing (2169687, 33)
+ 2025-04-26 07:52:55,215 - INFO - Data preview:
+ 2025-04-26 07:52:55,215 - INFO - Data shape: (2169687, 33)
+ 2025-04-26 07:52:55,223 - INFO - Data types:
 crash_date                       datetime64[ns]
 crash_time                               object
 borough                                category
@@ -153,8 +153,8 @@ crash_day                                object
 crash_month                              object
 crash_year                                int64
 dtype: object
- 2025-04-26 05:08:40,430 - INFO - Column names: ['crash_date', 'crash_time', 'borough', 'zip_code', 'latitude', 'longitude', 'location', 'on_street_name', 'cross_street_name', 'off_street_name', 'number_of_persons_injured', 'number_of_persons_killed', 'number_of_pedestrians_injured', 'number_of_pedestrians_killed', 'number_of_cyclist_injured', 'number_of_cyclist_killed', 'number_of_motorist_injured', 'number_of_motorist_killed', 'contributing_factor_vehicle_1', 'contributing_factor_vehicle_2', 'contributing_factor_vehicle_3', 'contributing_factor_vehicle_4', 'contributing_factor_vehicle_5', 'collision_id', 'vehicle_type_code_1', 'vehicle_type_code_2', 'vehicle_type_code_3', 'vehicle_type_code_4', 'vehicle_type_code_5', 'crash_hour', 'crash_day', 'crash_month', 'crash_year']
- 2025-04-26 05:08:43,045 - INFO - Missing values percentage 
+ 2025-04-26 07:52:55,223 - INFO - Column names: ['crash_date', 'crash_time', 'borough', 'zip_code', 'latitude', 'longitude', 'location', 'on_street_name', 'cross_street_name', 'off_street_name', 'number_of_persons_injured', 'number_of_persons_killed', 'number_of_pedestrians_injured', 'number_of_pedestrians_killed', 'number_of_cyclist_injured', 'number_of_cyclist_killed', 'number_of_motorist_injured', 'number_of_motorist_killed', 'contributing_factor_vehicle_1', 'contributing_factor_vehicle_2', 'contributing_factor_vehicle_3', 'contributing_factor_vehicle_4', 'contributing_factor_vehicle_5', 'collision_id', 'vehicle_type_code_1', 'vehicle_type_code_2', 'vehicle_type_code_3', 'vehicle_type_code_4', 'vehicle_type_code_5', 'crash_hour', 'crash_day', 'crash_month', 'crash_year']
+ 2025-04-26 07:52:58,693 - INFO - Missing values percentage 
 vehicle_type_code_5              99.564177
 contributing_factor_vehicle_5    99.550212
 vehicle_type_code_4              98.414149
@@ -189,59 +189,59 @@ number_of_pedestrians_killed      0.000000
 number_of_pedestrians_injured     0.000000
 crash_year                        0.000000
 dtype: float64
- 2025-04-26 05:08:43,051 - INFO - the minimium date of crashes is 2012-07-01 00:00:00
- 2025-04-26 05:08:43,051 - INFO - 
+ 2025-04-26 07:52:58,701 - INFO - the minimium date of crashes is 2012-07-01 00:00:00
+ 2025-04-26 07:52:58,701 - INFO - 
 
 
 
  Holidays Data 
 
- 2025-04-26 05:08:43,051 - INFO - 
+ 2025-04-26 07:52:58,701 - INFO - 
 
 
 
 
 
  Data Extraction of Public Holidays
- 2025-04-26 05:08:43,051 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2024 from URL: https://date.nager.at/api/v3/publicholidays/2024/US
- 2025-04-26 05:08:43,228 - INFO - This logging for function called (fetch_holidays) - Fetched 16 records for year 2024.
- 2025-04-26 05:08:43,229 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2023 from URL: https://date.nager.at/api/v3/publicholidays/2023/US
- 2025-04-26 05:08:43,339 - INFO - This logging for function called (fetch_holidays) - Fetched 16 records for year 2023.
- 2025-04-26 05:08:43,339 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2022 from URL: https://date.nager.at/api/v3/publicholidays/2022/US
- 2025-04-26 05:08:43,482 - INFO - This logging for function called (fetch_holidays) - Fetched 16 records for year 2022.
- 2025-04-26 05:08:43,482 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2021 from URL: https://date.nager.at/api/v3/publicholidays/2021/US
- 2025-04-26 05:08:43,615 - INFO - This logging for function called (fetch_holidays) - Fetched 16 records for year 2021.
- 2025-04-26 05:08:43,616 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2020 from URL: https://date.nager.at/api/v3/publicholidays/2020/US
- 2025-04-26 05:08:43,736 - INFO - This logging for function called (fetch_holidays) - Fetched 15 records for year 2020.
- 2025-04-26 05:08:43,737 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2019 from URL: https://date.nager.at/api/v3/publicholidays/2019/US
- 2025-04-26 05:08:43,864 - INFO - This logging for function called (fetch_holidays) - Fetched 15 records for year 2019.
- 2025-04-26 05:08:43,864 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2018 from URL: https://date.nager.at/api/v3/publicholidays/2018/US
- 2025-04-26 05:08:43,973 - INFO - This logging for function called (fetch_holidays) - Fetched 15 records for year 2018.
- 2025-04-26 05:08:43,973 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2017 from URL: https://date.nager.at/api/v3/publicholidays/2017/US
- 2025-04-26 05:08:44,108 - INFO - This logging for function called (fetch_holidays) - Fetched 15 records for year 2017.
- 2025-04-26 05:08:44,109 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2016 from URL: https://date.nager.at/api/v3/publicholidays/2016/US
- 2025-04-26 05:08:44,223 - INFO - This logging for function called (fetch_holidays) - Fetched 15 records for year 2016.
- 2025-04-26 05:08:44,223 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2015 from URL: https://date.nager.at/api/v3/publicholidays/2015/US
- 2025-04-26 05:08:44,342 - INFO - This logging for function called (fetch_holidays) - Fetched 15 records for year 2015.
- 2025-04-26 05:08:44,343 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2014 from URL: https://date.nager.at/api/v3/publicholidays/2014/US
- 2025-04-26 05:08:44,460 - INFO - This logging for function called (fetch_holidays) - Fetched 15 records for year 2014.
- 2025-04-26 05:08:44,460 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2013 from URL: https://date.nager.at/api/v3/publicholidays/2013/US
- 2025-04-26 05:08:44,591 - INFO - This logging for function called (fetch_holidays) - Fetched 15 records for year 2013.
- 2025-04-26 05:08:44,592 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2012 from URL: https://date.nager.at/api/v3/publicholidays/2012/US
- 2025-04-26 05:08:44,733 - INFO - This logging for function called (fetch_holidays) - Fetched 15 records for year 2012.
- 2025-04-26 05:08:44,733 - INFO - 
+ 2025-04-26 07:52:58,701 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2024 from URL: https://date.nager.at/api/v3/publicholidays/2024/US
+ 2025-04-26 07:52:58,919 - INFO - This logging for function called (fetch_holidays) - Fetched 16 records for year 2024.
+ 2025-04-26 07:52:58,919 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2023 from URL: https://date.nager.at/api/v3/publicholidays/2023/US
+ 2025-04-26 07:52:59,130 - INFO - This logging for function called (fetch_holidays) - Fetched 16 records for year 2023.
+ 2025-04-26 07:52:59,130 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2022 from URL: https://date.nager.at/api/v3/publicholidays/2022/US
+ 2025-04-26 07:52:59,353 - INFO - This logging for function called (fetch_holidays) - Fetched 16 records for year 2022.
+ 2025-04-26 07:52:59,357 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2021 from URL: https://date.nager.at/api/v3/publicholidays/2021/US
+ 2025-04-26 07:52:59,556 - INFO - This logging for function called (fetch_holidays) - Fetched 16 records for year 2021.
+ 2025-04-26 07:52:59,564 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2020 from URL: https://date.nager.at/api/v3/publicholidays/2020/US
+ 2025-04-26 07:52:59,781 - INFO - This logging for function called (fetch_holidays) - Fetched 15 records for year 2020.
+ 2025-04-26 07:52:59,781 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2019 from URL: https://date.nager.at/api/v3/publicholidays/2019/US
+ 2025-04-26 07:52:59,990 - INFO - This logging for function called (fetch_holidays) - Fetched 15 records for year 2019.
+ 2025-04-26 07:52:59,997 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2018 from URL: https://date.nager.at/api/v3/publicholidays/2018/US
+ 2025-04-26 07:53:00,193 - INFO - This logging for function called (fetch_holidays) - Fetched 15 records for year 2018.
+ 2025-04-26 07:53:00,193 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2017 from URL: https://date.nager.at/api/v3/publicholidays/2017/US
+ 2025-04-26 07:53:00,415 - INFO - This logging for function called (fetch_holidays) - Fetched 15 records for year 2017.
+ 2025-04-26 07:53:00,415 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2016 from URL: https://date.nager.at/api/v3/publicholidays/2016/US
+ 2025-04-26 07:53:00,620 - INFO - This logging for function called (fetch_holidays) - Fetched 15 records for year 2016.
+ 2025-04-26 07:53:00,620 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2015 from URL: https://date.nager.at/api/v3/publicholidays/2015/US
+ 2025-04-26 07:53:00,833 - INFO - This logging for function called (fetch_holidays) - Fetched 15 records for year 2015.
+ 2025-04-26 07:53:00,833 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2014 from URL: https://date.nager.at/api/v3/publicholidays/2014/US
+ 2025-04-26 07:53:01,031 - INFO - This logging for function called (fetch_holidays) - Fetched 15 records for year 2014.
+ 2025-04-26 07:53:01,031 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2013 from URL: https://date.nager.at/api/v3/publicholidays/2013/US
+ 2025-04-26 07:53:01,236 - INFO - This logging for function called (fetch_holidays) - Fetched 15 records for year 2013.
+ 2025-04-26 07:53:01,236 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2012 from URL: https://date.nager.at/api/v3/publicholidays/2012/US
+ 2025-04-26 07:53:01,440 - INFO - This logging for function called (fetch_holidays) - Fetched 15 records for year 2012.
+ 2025-04-26 07:53:01,440 - INFO - 
 
 
 
 
 
  Data Cleansing and Preparation of Public Holidays
- 2025-04-26 05:08:44,733 - INFO - The DataFrame contains data. 
+ 2025-04-26 07:53:01,440 - INFO - The DataFrame contains data. 
 
- 2025-04-26 05:08:44,734 - INFO - This logging for function called (clean_and_transform) - Fetched 147 records for only NewYork in this year 
- 2025-04-26 05:08:44,735 - INFO - This logging for function called (clean_and_transform) - Fetched this dataframe which has another counties not NewYork with 52 
+ 2025-04-26 07:53:01,450 - INFO - This logging for function called (clean_and_transform) - Fetched 147 records for only NewYork in this year 
+ 2025-04-26 07:53:01,452 - INFO - This logging for function called (clean_and_transform) - Fetched this dataframe which has another counties not NewYork with 52 
 
- 2025-04-26 05:08:44,738 - INFO - 
+ 2025-04-26 07:53:01,458 - INFO - 
  4      [US-CT, US-DE, US-HI, US-IN, US-KY, US-LA, US-...
 5                                                [US-TX]
 6                                                [US-MO]
@@ -296,23 +296,23 @@ dtype: float64
 195                                       [US-HI, US-SD]
 Name: counties, dtype: object 
 
- 2025-04-26 05:08:44,740 - INFO - Dates are unique after transformation.
- 2025-04-26 05:08:44,740 - INFO - The Columns' Names are changed successfully into ['holiday_date', 'holiday_name']
- 2025-04-26 05:08:44,741 - INFO - Date column successfully converted to datetime.
- 2025-04-26 05:08:44,742 - INFO - the minimium date of public holidays is 2012-01-02 00:00:00
- 2025-04-26 05:08:44,742 - INFO - 
+ 2025-04-26 07:53:01,465 - INFO - Dates are unique after transformation.
+ 2025-04-26 07:53:01,465 - INFO - The Columns' Names are changed successfully into ['holiday_date', 'holiday_name']
+ 2025-04-26 07:53:01,465 - INFO - Date column successfully converted to datetime.
+ 2025-04-26 07:53:01,465 - INFO - the minimium date of public holidays is 2012-01-02 00:00:00
+ 2025-04-26 07:53:01,465 - INFO - 
 
 
 
  Merging and Combining Datasets 
 
- 2025-04-26 05:08:44,742 - INFO - shape of data before merging (2169687, 33)
- 2025-04-26 05:08:45,512 - INFO - Both of 2 datasets are combined into 1 dataset successfully! 
- 2025-04-26 05:08:45,512 - INFO - shape of data after merging (2169687, 36)
- 2025-04-26 05:08:45,512 - INFO - After Merging Data
- 2025-04-26 05:08:45,512 - INFO - Data preview:
- 2025-04-26 05:08:45,512 - INFO - Data shape: (2169687, 36)
- 2025-04-26 05:08:45,514 - INFO - Data types:
+ 2025-04-26 07:53:01,465 - INFO - shape of data before merging (2169687, 33)
+ 2025-04-26 07:53:02,476 - INFO - Both of 2 datasets are combined into 1 dataset successfully! 
+ 2025-04-26 07:53:02,476 - INFO - shape of data after merging (2169687, 36)
+ 2025-04-26 07:53:02,476 - INFO - After Merging Data
+ 2025-04-26 07:53:02,476 - INFO - Data preview:
+ 2025-04-26 07:53:02,476 - INFO - Data shape: (2169687, 36)
+ 2025-04-26 07:53:02,476 - INFO - Data types:
 crash_date                       datetime64[ns]
 crash_time                               object
 borough                                category
@@ -350,8 +350,8 @@ holiday_date                     datetime64[ns]
 holiday_name                             object
 is_public_holiday                         int32
 dtype: object
- 2025-04-26 05:08:45,514 - INFO - Column names: ['crash_date', 'crash_time', 'borough', 'zip_code', 'latitude', 'longitude', 'location', 'on_street_name', 'cross_street_name', 'off_street_name', 'number_of_persons_injured', 'number_of_persons_killed', 'number_of_pedestrians_injured', 'number_of_pedestrians_killed', 'number_of_cyclist_injured', 'number_of_cyclist_killed', 'number_of_motorist_injured', 'number_of_motorist_killed', 'contributing_factor_vehicle_1', 'contributing_factor_vehicle_2', 'contributing_factor_vehicle_3', 'contributing_factor_vehicle_4', 'contributing_factor_vehicle_5', 'collision_id', 'vehicle_type_code_1', 'vehicle_type_code_2', 'vehicle_type_code_3', 'vehicle_type_code_4', 'vehicle_type_code_5', 'crash_hour', 'crash_day', 'crash_month', 'crash_year', 'holiday_date', 'holiday_name', 'is_public_holiday']
- 2025-04-26 05:08:48,183 - INFO - Missing values percentage 
+ 2025-04-26 07:53:02,476 - INFO - Column names: ['crash_date', 'crash_time', 'borough', 'zip_code', 'latitude', 'longitude', 'location', 'on_street_name', 'cross_street_name', 'off_street_name', 'number_of_persons_injured', 'number_of_persons_killed', 'number_of_pedestrians_injured', 'number_of_pedestrians_killed', 'number_of_cyclist_injured', 'number_of_cyclist_killed', 'number_of_motorist_injured', 'number_of_motorist_killed', 'contributing_factor_vehicle_1', 'contributing_factor_vehicle_2', 'contributing_factor_vehicle_3', 'contributing_factor_vehicle_4', 'contributing_factor_vehicle_5', 'collision_id', 'vehicle_type_code_1', 'vehicle_type_code_2', 'vehicle_type_code_3', 'vehicle_type_code_4', 'vehicle_type_code_5', 'crash_hour', 'crash_day', 'crash_month', 'crash_year', 'holiday_date', 'holiday_name', 'is_public_holiday']
+ 2025-04-26 07:53:05,895 - INFO - Missing values percentage 
 vehicle_type_code_5              99.564177
 contributing_factor_vehicle_5    99.550212
 vehicle_type_code_4              98.414149
@@ -389,14 +389,14 @@ number_of_pedestrians_killed      0.000000
 number_of_pedestrians_injured     0.000000
 is_public_holiday                 0.000000
 dtype: float64
- 2025-04-26 05:08:48,904 - INFO - ['vehicle_type_code_1', 'vehicle_type_code_2', 'vehicle_type_code_3', 'vehicle_type_code_4', 'vehicle_type_code_5']
- 2025-04-26 05:08:54,709 - INFO - starting Geographical imputations 
- 2025-04-26 05:09:02,367 - INFO - successfully added geometries
- 2025-04-26 05:09:02,771 - INFO - Geographical Imputed successfully!
- 2025-04-26 05:09:09,683 - INFO - After Merging and cleaning Data
- 2025-04-26 05:09:09,683 - INFO - Data preview:
- 2025-04-26 05:09:09,684 - INFO - Data shape: (1901539, 41)
- 2025-04-26 05:09:09,685 - INFO - Data types:
+ 2025-04-26 07:53:06,773 - INFO - ['vehicle_type_code_1', 'vehicle_type_code_2', 'vehicle_type_code_3', 'vehicle_type_code_4', 'vehicle_type_code_5']
+ 2025-04-26 07:53:13,889 - INFO - starting Geographical imputations 
+ 2025-04-26 07:53:24,352 - INFO - successfully added geometries
+ 2025-04-26 07:53:24,787 - INFO - Geographical Imputed successfully!
+ 2025-04-26 07:53:32,292 - INFO - After Merging and cleaning Data
+ 2025-04-26 07:53:32,292 - INFO - Data preview:
+ 2025-04-26 07:53:32,292 - INFO - Data shape: (1901539, 41)
+ 2025-04-26 07:53:32,330 - INFO - Data types:
 crash_date                       datetime64[ns]
 crash_time                               object
 zip_code                                 object
@@ -439,8 +439,8 @@ total_killed                            float64
 severity                                 object
 location_type                            object
 dtype: object
- 2025-04-26 05:09:09,685 - INFO - Column names: ['crash_date', 'crash_time', 'zip_code', 'latitude', 'longitude', 'location', 'on_street_name', 'cross_street_name', 'off_street_name', 'number_of_persons_injured', 'number_of_persons_killed', 'number_of_pedestrians_injured', 'number_of_pedestrians_killed', 'number_of_cyclist_injured', 'number_of_cyclist_killed', 'number_of_motorist_injured', 'number_of_motorist_killed', 'contributing_factor_vehicle_1', 'contributing_factor_vehicle_2', 'contributing_factor_vehicle_3', 'contributing_factor_vehicle_4', 'contributing_factor_vehicle_5', 'collision_id', 'vehicle_type_code_1', 'vehicle_type_code_2', 'vehicle_type_code_3', 'vehicle_type_code_4', 'vehicle_type_code_5', 'crash_hour', 'crash_day', 'crash_month', 'crash_year', 'holiday_name', 'is_public_holiday', 'Number_of_involved_Vehicles', 'geometry', 'BoroName', 'total_injured', 'total_killed', 'severity', 'location_type']
- 2025-04-26 05:09:12,327 - INFO - Missing values percentage 
+ 2025-04-26 07:53:32,330 - INFO - Column names: ['crash_date', 'crash_time', 'zip_code', 'latitude', 'longitude', 'location', 'on_street_name', 'cross_street_name', 'off_street_name', 'number_of_persons_injured', 'number_of_persons_killed', 'number_of_pedestrians_injured', 'number_of_pedestrians_killed', 'number_of_cyclist_injured', 'number_of_cyclist_killed', 'number_of_motorist_injured', 'number_of_motorist_killed', 'contributing_factor_vehicle_1', 'contributing_factor_vehicle_2', 'contributing_factor_vehicle_3', 'contributing_factor_vehicle_4', 'contributing_factor_vehicle_5', 'collision_id', 'vehicle_type_code_1', 'vehicle_type_code_2', 'vehicle_type_code_3', 'vehicle_type_code_4', 'vehicle_type_code_5', 'crash_hour', 'crash_day', 'crash_month', 'crash_year', 'holiday_name', 'is_public_holiday', 'Number_of_involved_Vehicles', 'geometry', 'BoroName', 'total_injured', 'total_killed', 'severity', 'location_type']
+ 2025-04-26 07:53:35,376 - INFO - Missing values percentage 
 contributing_factor_vehicle_5    99.975809
 contributing_factor_vehicle_4    99.912650
 vehicle_type_code_5              99.553625
@@ -483,7 +483,7 @@ longitude                         0.000000
 latitude                          0.000000
 location_type                     0.000000
 dtype: float64
- 2025-04-26 05:09:12,342 - INFO - 
+ 2025-04-26 07:53:35,402 - INFO - 
    crash_date crash_time zip_code   latitude  longitude  \
 2  2023-11-01   01:29:00    11230  40.621790 -73.970024   
 9  2021-09-11   09:35:00    11208  40.667202 -73.866500   
@@ -791,8 +791,8 @@ dtype: float64
 29            2.0           0.0       Injury     mid_block  
 30            2.0           0.0       Injury  intersection  
 31            2.0           0.0       Injury  intersection  
- 2025-04-26 05:09:12,343 - INFO - Final Result
- 2025-04-26 05:09:18,259 - INFO - crash_month  January  February  March  April    May   June   July  August  \
+ 2025-04-26 07:53:35,402 - INFO - Final Result
+ 2025-04-26 07:53:42,067 - INFO - crash_month  January  February  March  April    May   June   July  August  \
 crash_year                                                                  
 2012               0         0      0      0      0      0  14468   14505   
 2013           13256     12253  14062  13987  15788  15404  14648   13955   
@@ -825,4 +825,4 @@ crash_year
 2023              7528     7852      7140      7246  
 2024              6370     6811      6875      7129  
 2025                 0        0         0         0  
- 2025-04-26 05:09:19,235 - INFO - Execution Time is 50.483619689941406
+ 2025-04-26 07:53:43,379 - INFO - Execution Time is 62.949207067489624
