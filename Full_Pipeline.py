@@ -19,8 +19,8 @@ def main():
     except Exception as e :
         logging.error(f"Error Happened for logging : {e}")
         
-    number_of_years = 12
-    start_year_input = 2024
+    number_of_years = 0
+    start_year_input = 2023
 
     try:
         """
@@ -119,7 +119,7 @@ def main():
         
         pd.set_option('display.max_columns', None)
         logging.info(f"\n{Cleaned_merged_df.head(20)}")
-
+        print('This is The final cleaned dataframe : \n ', Cleaned_merged_df)
         logging.info("Final Result")
 
 

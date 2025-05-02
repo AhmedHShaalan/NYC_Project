@@ -1,17 +1,17 @@
- 2025-04-26 15:18:38,184 - INFO - 
+ 2025-05-02 17:32:48,432 - INFO - 
 
 
 
  Crashes and Collisions Data 
 
- 2025-04-26 15:18:38,184 - INFO - Loading Crashes Data 
- 2025-04-26 15:18:38,184 - INFO - new run
- 2025-04-26 15:18:44,746 - INFO - Crash data loaded successfully.
- 2025-04-26 15:18:44,746 - INFO -  Crashes and Collisions Data Exploration
- 2025-04-26 15:18:44,746 - INFO - shape of data after loading (2169687, 29)
- 2025-04-26 15:18:44,746 - INFO - Data preview:
- 2025-04-26 15:18:44,747 - INFO - Data shape: (2169687, 29)
- 2025-04-26 15:18:44,747 - INFO - Data types:
+ 2025-05-02 17:32:48,432 - INFO - Loading Crashes Data 
+ 2025-05-02 17:32:48,432 - INFO - new run
+ 2025-05-02 17:32:55,398 - INFO - Crash data loaded successfully.
+ 2025-05-02 17:32:55,399 - INFO -  Crashes and Collisions Data Exploration
+ 2025-05-02 17:32:55,399 - INFO - shape of data after loading (2169687, 29)
+ 2025-05-02 17:32:55,399 - INFO - Data preview:
+ 2025-05-02 17:32:55,399 - INFO - Data shape: (2169687, 29)
+ 2025-05-02 17:32:55,400 - INFO - Data types:
 CRASH DATE                        object
 CRASH TIME                        object
 BOROUGH                           object
@@ -42,8 +42,8 @@ VEHICLE TYPE CODE 3               object
 VEHICLE TYPE CODE 4               object
 VEHICLE TYPE CODE 5               object
 dtype: object
- 2025-04-26 15:18:44,748 - INFO - Column names: ['CRASH DATE', 'CRASH TIME', 'BOROUGH', 'ZIP CODE', 'LATITUDE', 'LONGITUDE', 'LOCATION', 'ON STREET NAME', 'CROSS STREET NAME', 'OFF STREET NAME', 'NUMBER OF PERSONS INJURED', 'NUMBER OF PERSONS KILLED', 'NUMBER OF PEDESTRIANS INJURED', 'NUMBER OF PEDESTRIANS KILLED', 'NUMBER OF CYCLIST INJURED', 'NUMBER OF CYCLIST KILLED', 'NUMBER OF MOTORIST INJURED', 'NUMBER OF MOTORIST KILLED', 'CONTRIBUTING FACTOR VEHICLE 1', 'CONTRIBUTING FACTOR VEHICLE 2', 'CONTRIBUTING FACTOR VEHICLE 3', 'CONTRIBUTING FACTOR VEHICLE 4', 'CONTRIBUTING FACTOR VEHICLE 5', 'COLLISION_ID', 'VEHICLE TYPE CODE 1', 'VEHICLE TYPE CODE 2', 'VEHICLE TYPE CODE 3', 'VEHICLE TYPE CODE 4', 'VEHICLE TYPE CODE 5']
- 2025-04-26 15:18:47,312 - INFO - Missing values percentage 
+ 2025-05-02 17:32:55,400 - INFO - Column names: ['CRASH DATE', 'CRASH TIME', 'BOROUGH', 'ZIP CODE', 'LATITUDE', 'LONGITUDE', 'LOCATION', 'ON STREET NAME', 'CROSS STREET NAME', 'OFF STREET NAME', 'NUMBER OF PERSONS INJURED', 'NUMBER OF PERSONS KILLED', 'NUMBER OF PEDESTRIANS INJURED', 'NUMBER OF PEDESTRIANS KILLED', 'NUMBER OF CYCLIST INJURED', 'NUMBER OF CYCLIST KILLED', 'NUMBER OF MOTORIST INJURED', 'NUMBER OF MOTORIST KILLED', 'CONTRIBUTING FACTOR VEHICLE 1', 'CONTRIBUTING FACTOR VEHICLE 2', 'CONTRIBUTING FACTOR VEHICLE 3', 'CONTRIBUTING FACTOR VEHICLE 4', 'CONTRIBUTING FACTOR VEHICLE 5', 'COLLISION_ID', 'VEHICLE TYPE CODE 1', 'VEHICLE TYPE CODE 2', 'VEHICLE TYPE CODE 3', 'VEHICLE TYPE CODE 4', 'VEHICLE TYPE CODE 5']
+ 2025-05-02 17:32:58,121 - INFO - Missing values percentage 
 VEHICLE TYPE CODE 5              99.564177
 CONTRIBUTING FACTOR VEHICLE 5    99.550212
 VEHICLE TYPE CODE 4              98.414149
@@ -74,12 +74,12 @@ NUMBER OF PEDESTRIANS KILLED      0.000000
 NUMBER OF PEDESTRIANS INJURED     0.000000
 NUMBER OF CYCLIST INJURED         0.000000
 dtype: float64
- 2025-04-26 15:18:47,312 - INFO - Crashes and Collisions Data Preparation 
- 2025-04-26 15:18:47,313 - INFO - Columns are reformatted successfully!
- 2025-04-26 15:18:47,640 - INFO - Date is reformatted successfully!
- 2025-04-26 15:18:47,915 - INFO - Time is reformatted successfully!
- 2025-04-26 15:18:49,491 - INFO - Data Types are converted successfully!
- 2025-04-26 15:18:49,492 - INFO - Data types after preprocessing :
+ 2025-05-02 17:32:58,122 - INFO - Crashes and Collisions Data Preparation 
+ 2025-05-02 17:32:58,122 - INFO - Columns are reformatted successfully!
+ 2025-05-02 17:32:58,488 - INFO - Date is reformatted successfully!
+ 2025-05-02 17:32:58,811 - INFO - Time is reformatted successfully!
+ 2025-05-02 17:33:00,562 - INFO - Data Types are converted successfully!
+ 2025-05-02 17:33:00,563 - INFO - Data types after preprocessing :
 crash_date                       datetime64[ns]
 crash_time                               object
 borough                                category
@@ -114,11 +114,11 @@ crash_day                                object
 crash_month                              object
 crash_year                                int64
 dtype: object
- 2025-04-26 15:18:49,492 - INFO - preprocessing has been done successfully
- 2025-04-26 15:18:50,337 - INFO - shape of data after preprocessing (2169687, 33)
- 2025-04-26 15:18:50,337 - INFO - Data preview:
- 2025-04-26 15:18:50,337 - INFO - Data shape: (2169687, 33)
- 2025-04-26 15:18:50,338 - INFO - Data types:
+ 2025-05-02 17:33:00,563 - INFO - preprocessing has been done successfully
+ 2025-05-02 17:33:01,203 - INFO - shape of data after preprocessing (210411, 33)
+ 2025-05-02 17:33:01,203 - INFO - Data preview:
+ 2025-05-02 17:33:01,203 - INFO - Data shape: (210411, 33)
+ 2025-05-02 17:33:01,204 - INFO - Data types:
 crash_date                       datetime64[ns]
 crash_time                               object
 borough                                category
@@ -153,166 +153,94 @@ crash_day                                object
 crash_month                              object
 crash_year                                int64
 dtype: object
- 2025-04-26 15:18:50,338 - INFO - Column names: ['crash_date', 'crash_time', 'borough', 'zip_code', 'latitude', 'longitude', 'location', 'on_street_name', 'cross_street_name', 'off_street_name', 'number_of_persons_injured', 'number_of_persons_killed', 'number_of_pedestrians_injured', 'number_of_pedestrians_killed', 'number_of_cyclist_injured', 'number_of_cyclist_killed', 'number_of_motorist_injured', 'number_of_motorist_killed', 'contributing_factor_vehicle_1', 'contributing_factor_vehicle_2', 'contributing_factor_vehicle_3', 'contributing_factor_vehicle_4', 'contributing_factor_vehicle_5', 'collision_id', 'vehicle_type_code_1', 'vehicle_type_code_2', 'vehicle_type_code_3', 'vehicle_type_code_4', 'vehicle_type_code_5', 'crash_hour', 'crash_day', 'crash_month', 'crash_year']
- 2025-04-26 15:18:52,759 - INFO - Missing values percentage 
-vehicle_type_code_5              99.564177
-contributing_factor_vehicle_5    99.550212
-vehicle_type_code_4              98.414149
-contributing_factor_vehicle_4    98.355062
-vehicle_type_code_3              93.058031
-contributing_factor_vehicle_3    92.783475
-off_street_name                  82.694048
-cross_street_name                38.154351
-zip_code                         30.911233
-borough                          30.898835
-on_street_name                   21.563433
-vehicle_type_code_2              19.762344
-contributing_factor_vehicle_2    15.882245
-location                         11.054820
-longitude                        11.054820
-latitude                         11.054820
-vehicle_type_code_1               0.707660
-contributing_factor_vehicle_1     0.345119
-number_of_persons_killed          0.001429
-number_of_persons_injured         0.000830
+ 2025-05-02 17:33:01,204 - INFO - Column names: ['crash_date', 'crash_time', 'borough', 'zip_code', 'latitude', 'longitude', 'location', 'on_street_name', 'cross_street_name', 'off_street_name', 'number_of_persons_injured', 'number_of_persons_killed', 'number_of_pedestrians_injured', 'number_of_pedestrians_killed', 'number_of_cyclist_injured', 'number_of_cyclist_killed', 'number_of_motorist_injured', 'number_of_motorist_killed', 'contributing_factor_vehicle_1', 'contributing_factor_vehicle_2', 'contributing_factor_vehicle_3', 'contributing_factor_vehicle_4', 'contributing_factor_vehicle_5', 'collision_id', 'vehicle_type_code_1', 'vehicle_type_code_2', 'vehicle_type_code_3', 'vehicle_type_code_4', 'vehicle_type_code_5', 'crash_hour', 'crash_day', 'crash_month', 'crash_year']
+ 2025-05-02 17:33:01,474 - INFO - Missing values percentage 
+vehicle_type_code_5              99.297090
+contributing_factor_vehicle_5    99.266198
+vehicle_type_code_4              97.727780
+contributing_factor_vehicle_4    97.589955
+vehicle_type_code_3              91.609754
+contributing_factor_vehicle_3    90.963400
+off_street_name                  71.760032
+cross_street_name                49.015498
+vehicle_type_code_2              33.873704
+zip_code                         29.348751
+borough                          29.333542
+on_street_name                   28.240919
+contributing_factor_vehicle_2    23.754937
+location                          6.978723
+longitude                         6.978723
+latitude                          6.978723
+vehicle_type_code_1               1.696679
+contributing_factor_vehicle_1     0.710514
 crash_date                        0.000000
 crash_hour                        0.000000
-crash_day                         0.000000
-crash_month                       0.000000
-number_of_motorist_injured        0.000000
 collision_id                      0.000000
+crash_month                       0.000000
+crash_day                         0.000000
+number_of_motorist_injured        0.000000
 number_of_motorist_killed         0.000000
 crash_time                        0.000000
 number_of_cyclist_killed          0.000000
 number_of_cyclist_injured         0.000000
 number_of_pedestrians_killed      0.000000
 number_of_pedestrians_injured     0.000000
+number_of_persons_killed          0.000000
+number_of_persons_injured         0.000000
 crash_year                        0.000000
 dtype: float64
- 2025-04-26 15:18:52,765 - INFO - the minimium date of crashes is 2012-07-01 00:00:00
- 2025-04-26 15:18:52,765 - INFO - 
+ 2025-05-02 17:33:01,475 - INFO - the minimium date of crashes is 2023-01-01 00:00:00
+ 2025-05-02 17:33:01,475 - INFO - 
 
 
 
  Holidays Data 
 
- 2025-04-26 15:18:52,765 - INFO - 
+ 2025-05-02 17:33:01,475 - INFO - 
 
 
 
 
 
  Data Extraction of Public Holidays
- 2025-04-26 15:18:52,765 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2024 from URL: https://date.nager.at/api/v3/publicholidays/2024/US
- 2025-04-26 15:18:53,062 - INFO - This logging for function called (fetch_holidays) - Fetched 16 records for year 2024.
- 2025-04-26 15:18:53,062 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2023 from URL: https://date.nager.at/api/v3/publicholidays/2023/US
- 2025-04-26 15:18:53,290 - INFO - This logging for function called (fetch_holidays) - Fetched 16 records for year 2023.
- 2025-04-26 15:18:53,291 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2022 from URL: https://date.nager.at/api/v3/publicholidays/2022/US
- 2025-04-26 15:18:53,517 - INFO - This logging for function called (fetch_holidays) - Fetched 16 records for year 2022.
- 2025-04-26 15:18:53,517 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2021 from URL: https://date.nager.at/api/v3/publicholidays/2021/US
- 2025-04-26 15:18:53,749 - INFO - This logging for function called (fetch_holidays) - Fetched 16 records for year 2021.
- 2025-04-26 15:18:53,749 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2020 from URL: https://date.nager.at/api/v3/publicholidays/2020/US
- 2025-04-26 15:18:53,960 - INFO - This logging for function called (fetch_holidays) - Fetched 15 records for year 2020.
- 2025-04-26 15:18:53,960 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2019 from URL: https://date.nager.at/api/v3/publicholidays/2019/US
- 2025-04-26 15:18:54,189 - INFO - This logging for function called (fetch_holidays) - Fetched 15 records for year 2019.
- 2025-04-26 15:18:54,191 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2018 from URL: https://date.nager.at/api/v3/publicholidays/2018/US
- 2025-04-26 15:18:54,433 - INFO - This logging for function called (fetch_holidays) - Fetched 15 records for year 2018.
- 2025-04-26 15:18:54,433 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2017 from URL: https://date.nager.at/api/v3/publicholidays/2017/US
- 2025-04-26 15:18:54,655 - INFO - This logging for function called (fetch_holidays) - Fetched 15 records for year 2017.
- 2025-04-26 15:18:54,655 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2016 from URL: https://date.nager.at/api/v3/publicholidays/2016/US
- 2025-04-26 15:18:54,858 - INFO - This logging for function called (fetch_holidays) - Fetched 15 records for year 2016.
- 2025-04-26 15:18:54,858 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2015 from URL: https://date.nager.at/api/v3/publicholidays/2015/US
- 2025-04-26 15:18:55,081 - INFO - This logging for function called (fetch_holidays) - Fetched 15 records for year 2015.
- 2025-04-26 15:18:55,082 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2014 from URL: https://date.nager.at/api/v3/publicholidays/2014/US
- 2025-04-26 15:18:55,299 - INFO - This logging for function called (fetch_holidays) - Fetched 15 records for year 2014.
- 2025-04-26 15:18:55,300 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2013 from URL: https://date.nager.at/api/v3/publicholidays/2013/US
- 2025-04-26 15:18:55,538 - INFO - This logging for function called (fetch_holidays) - Fetched 15 records for year 2013.
- 2025-04-26 15:18:55,538 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2012 from URL: https://date.nager.at/api/v3/publicholidays/2012/US
- 2025-04-26 15:18:55,774 - INFO - This logging for function called (fetch_holidays) - Fetched 15 records for year 2012.
- 2025-04-26 15:18:55,774 - INFO - 
+ 2025-05-02 17:33:01,475 - INFO - This logging for function called (fetch_holidays) - Fetching holidays for year 2023 from URL: https://date.nager.at/api/v3/publicholidays/2023/US
+ 2025-05-02 17:33:01,660 - INFO - This logging for function called (fetch_holidays) - Fetched 16 records for year 2023.
+ 2025-05-02 17:33:01,660 - INFO - 
 
 
 
 
 
  Data Cleansing and Preparation of Public Holidays
- 2025-04-26 15:18:55,774 - INFO - The DataFrame contains data. 
+ 2025-05-02 17:33:01,660 - INFO - The DataFrame contains data. 
 
- 2025-04-26 15:18:55,775 - INFO - This logging for function called (clean_and_transform) - Fetched 147 records for only NewYork in this year 
- 2025-04-26 15:18:55,775 - INFO - This logging for function called (clean_and_transform) - Fetched this dataframe which has another counties not NewYork with 52 
+ 2025-05-02 17:33:01,662 - INFO - This logging for function called (clean_and_transform) - Fetched 12 records for only NewYork in this year 
+ 2025-05-02 17:33:01,662 - INFO - This logging for function called (clean_and_transform) - Fetched this dataframe which has another counties not NewYork with 4 
 
- 2025-04-26 15:18:55,779 - INFO - 
- 4      [US-CT, US-DE, US-HI, US-IN, US-KY, US-LA, US-...
-5                                                [US-TX]
-6                                                [US-MO]
-12     [US-AK, US-AL, US-CA, US-HI, US-IA, US-LA, US-...
-20     [US-CT, US-DE, US-HI, US-IN, US-KY, US-LA, US-...
-21                                               [US-TX]
-22                                               [US-MO]
-28     [US-AK, US-AL, US-CA, US-HI, US-IA, US-LA, US-...
-36     [US-CT, US-DE, US-HI, US-IN, US-KY, US-LA, US-...
-37                                               [US-TX]
-38                                               [US-MO]
-44     [US-AK, US-AL, US-CA, US-HI, US-IA, US-LA, US-...
-52     [US-CT, US-DE, US-HI, US-IN, US-KY, US-LA, US-...
-53                                               [US-TX]
-54                                               [US-MO]
-60     [US-AK, US-AL, US-CA, US-HI, US-IA, US-LA, US-...
-68     [US-CT, US-DE, US-HI, US-IN, US-KY, US-LA, US-...
-69                                               [US-TX]
-70                                               [US-MO]
-75     [US-AK, US-AL, US-CA, US-HI, US-IA, US-LA, US-...
-83     [US-CT, US-DE, US-HI, US-IN, US-KY, US-LA, US-...
-84                                               [US-TX]
-85                                               [US-MO]
-90     [US-AK, US-AL, US-CA, US-HI, US-IA, US-LA, US-...
-98     [US-CT, US-DE, US-HI, US-IN, US-KY, US-LA, US-...
-99                                               [US-TX]
-100                                              [US-MO]
-105    [US-AK, US-HI, US-IA, US-MN, US-NC, US-SD, US-VT]
-113    [US-CT, US-DE, US-HI, US-IN, US-KY, US-LA, US-...
-114                                              [US-TX]
-115                                              [US-MO]
-120                  [US-AK, US-HI, US-MN, US-SD, US-VT]
-128    [US-CT, US-DE, US-HI, US-IN, US-KY, US-LA, US-...
-129                                              [US-TX]
-130                                              [US-MO]
-135                  [US-AK, US-HI, US-MN, US-SD, US-VT]
-143    [US-CT, US-DE, US-HI, US-IN, US-KY, US-LA, US-...
-144                                              [US-TX]
-145                                              [US-MO]
-150                                [US-AK, US-HI, US-SD]
-158    [US-CT, US-DE, US-HI, US-IN, US-KY, US-LA, US-...
-159                                              [US-TX]
-160                                              [US-MO]
-165                                       [US-HI, US-SD]
-173    [US-CT, US-DE, US-HI, US-IN, US-KY, US-LA, US-...
-174                                              [US-TX]
-175                                              [US-MO]
-180                                       [US-HI, US-SD]
-188    [US-CT, US-DE, US-HI, US-IN, US-KY, US-LA, US-...
-189                                              [US-TX]
-190                                              [US-MO]
-195                                       [US-HI, US-SD]
+ 2025-05-02 17:33:01,663 - INFO - 
+ 4     [US-CT, US-DE, US-HI, US-IN, US-KY, US-LA, US-...
+5                                               [US-TX]
+6                                               [US-MO]
+12    [US-AK, US-AL, US-CA, US-HI, US-IA, US-LA, US-...
 Name: counties, dtype: object 
 
- 2025-04-26 15:18:55,782 - INFO - Dates are unique after transformation.
- 2025-04-26 15:18:55,782 - INFO - The Columns' Names are changed successfully into ['holiday_date', 'holiday_name']
- 2025-04-26 15:18:55,783 - INFO - Date column successfully converted to datetime.
- 2025-04-26 15:18:55,784 - INFO - the minimium date of public holidays is 2012-01-02 00:00:00
- 2025-04-26 15:18:55,784 - INFO - 
+ 2025-05-02 17:33:01,664 - INFO - Dates are unique after transformation.
+ 2025-05-02 17:33:01,664 - INFO - The Columns' Names are changed successfully into ['holiday_date', 'holiday_name']
+ 2025-05-02 17:33:01,666 - INFO - Date column successfully converted to datetime.
+ 2025-05-02 17:33:01,666 - INFO - the minimium date of public holidays is 2023-01-02 00:00:00
+ 2025-05-02 17:33:01,666 - INFO - 
 
 
 
  Merging and Combining Datasets 
 
- 2025-04-26 15:18:55,784 - INFO - shape of data before merging (2169687, 33)
- 2025-04-26 15:18:56,942 - INFO - Both of 2 datasets are combined into 1 dataset successfully! 
- 2025-04-26 15:18:56,943 - INFO - shape of data after merging (2169687, 36)
- 2025-04-26 15:18:56,943 - INFO - After Merging Data
- 2025-04-26 15:18:56,943 - INFO - Data preview:
- 2025-04-26 15:18:56,943 - INFO - Data shape: (2169687, 36)
- 2025-04-26 15:18:56,943 - INFO - Data types:
+ 2025-05-02 17:33:01,666 - INFO - shape of data before merging (210411, 33)
+ 2025-05-02 17:33:01,752 - INFO - Both of 2 datasets are combined into 1 dataset successfully! 
+ 2025-05-02 17:33:01,752 - INFO - shape of data after merging (210411, 36)
+ 2025-05-02 17:33:01,752 - INFO - After Merging Data
+ 2025-05-02 17:33:01,752 - INFO - Data preview:
+ 2025-05-02 17:33:01,752 - INFO - Data shape: (210411, 36)
+ 2025-05-02 17:33:01,753 - INFO - Data types:
 crash_date                       datetime64[ns]
 crash_time                               object
 borough                                category
@@ -350,34 +278,32 @@ holiday_date                     datetime64[ns]
 holiday_name                             object
 is_public_holiday                         int32
 dtype: object
- 2025-04-26 15:18:56,943 - INFO - Column names: ['crash_date', 'crash_time', 'borough', 'zip_code', 'latitude', 'longitude', 'location', 'on_street_name', 'cross_street_name', 'off_street_name', 'number_of_persons_injured', 'number_of_persons_killed', 'number_of_pedestrians_injured', 'number_of_pedestrians_killed', 'number_of_cyclist_injured', 'number_of_cyclist_killed', 'number_of_motorist_injured', 'number_of_motorist_killed', 'contributing_factor_vehicle_1', 'contributing_factor_vehicle_2', 'contributing_factor_vehicle_3', 'contributing_factor_vehicle_4', 'contributing_factor_vehicle_5', 'collision_id', 'vehicle_type_code_1', 'vehicle_type_code_2', 'vehicle_type_code_3', 'vehicle_type_code_4', 'vehicle_type_code_5', 'crash_hour', 'crash_day', 'crash_month', 'crash_year', 'holiday_date', 'holiday_name', 'is_public_holiday']
- 2025-04-26 15:18:59,568 - INFO - Missing values percentage 
-vehicle_type_code_5              99.564177
-contributing_factor_vehicle_5    99.550212
-vehicle_type_code_4              98.414149
-contributing_factor_vehicle_4    98.355062
-holiday_date                     97.631916
-holiday_name                     97.631916
-vehicle_type_code_3              93.058031
-contributing_factor_vehicle_3    92.783475
-off_street_name                  82.694048
-cross_street_name                38.154351
-zip_code                         30.911233
-borough                          30.898835
-on_street_name                   21.563433
-vehicle_type_code_2              19.762344
-contributing_factor_vehicle_2    15.882245
-location                         11.054820
-longitude                        11.054820
-latitude                         11.054820
-vehicle_type_code_1               0.707660
-contributing_factor_vehicle_1     0.345119
-number_of_persons_killed          0.001429
-number_of_persons_injured         0.000830
-crash_year                        0.000000
-crash_month                       0.000000
-crash_day                         0.000000
+ 2025-05-02 17:33:01,753 - INFO - Column names: ['crash_date', 'crash_time', 'borough', 'zip_code', 'latitude', 'longitude', 'location', 'on_street_name', 'cross_street_name', 'off_street_name', 'number_of_persons_injured', 'number_of_persons_killed', 'number_of_pedestrians_injured', 'number_of_pedestrians_killed', 'number_of_cyclist_injured', 'number_of_cyclist_killed', 'number_of_motorist_injured', 'number_of_motorist_killed', 'contributing_factor_vehicle_1', 'contributing_factor_vehicle_2', 'contributing_factor_vehicle_3', 'contributing_factor_vehicle_4', 'contributing_factor_vehicle_5', 'collision_id', 'vehicle_type_code_1', 'vehicle_type_code_2', 'vehicle_type_code_3', 'vehicle_type_code_4', 'vehicle_type_code_5', 'crash_hour', 'crash_day', 'crash_month', 'crash_year', 'holiday_date', 'holiday_name', 'is_public_holiday']
+ 2025-05-02 17:33:02,036 - INFO - Missing values percentage 
+vehicle_type_code_5              99.297090
+contributing_factor_vehicle_5    99.266198
+holiday_name                     98.770502
+holiday_date                     98.770502
+vehicle_type_code_4              97.727780
+contributing_factor_vehicle_4    97.589955
+vehicle_type_code_3              91.609754
+contributing_factor_vehicle_3    90.963400
+off_street_name                  71.760032
+cross_street_name                49.015498
+vehicle_type_code_2              33.873704
+zip_code                         29.348751
+borough                          29.333542
+on_street_name                   28.240919
+contributing_factor_vehicle_2    23.754937
+location                          6.978723
+longitude                         6.978723
+latitude                          6.978723
+vehicle_type_code_1               1.696679
+contributing_factor_vehicle_1     0.710514
 crash_hour                        0.000000
+crash_day                         0.000000
+crash_month                       0.000000
+crash_year                        0.000000
 crash_date                        0.000000
 collision_id                      0.000000
 crash_time                        0.000000
@@ -387,16 +313,18 @@ number_of_cyclist_killed          0.000000
 number_of_cyclist_injured         0.000000
 number_of_pedestrians_killed      0.000000
 number_of_pedestrians_injured     0.000000
+number_of_persons_killed          0.000000
+number_of_persons_injured         0.000000
 is_public_holiday                 0.000000
 dtype: float64
- 2025-04-26 15:19:00,606 - INFO - ['vehicle_type_code_1', 'vehicle_type_code_2', 'vehicle_type_code_3', 'vehicle_type_code_4', 'vehicle_type_code_5']
- 2025-04-26 15:19:06,434 - INFO - starting Geographical imputations 
- 2025-04-26 15:19:14,114 - INFO - successfully added geometries
- 2025-04-26 15:19:14,506 - INFO - Geographical Imputed successfully!
- 2025-04-26 15:19:21,200 - INFO - After Merging and cleaning Data
- 2025-04-26 15:19:21,200 - INFO - Data preview:
- 2025-04-26 15:19:21,200 - INFO - Data shape: (1901539, 41)
- 2025-04-26 15:19:21,201 - INFO - Data types:
+ 2025-05-02 17:33:02,111 - INFO - ['vehicle_type_code_1', 'vehicle_type_code_2', 'vehicle_type_code_3', 'vehicle_type_code_4', 'vehicle_type_code_5']
+ 2025-05-02 17:33:02,739 - INFO - starting Geographical imputations 
+ 2025-05-02 17:33:03,545 - INFO - successfully added geometries
+ 2025-05-02 17:33:03,579 - INFO - Geographical Imputed successfully!
+ 2025-05-02 17:33:04,353 - INFO - After Merging and cleaning Data
+ 2025-05-02 17:33:04,353 - INFO - Data preview:
+ 2025-05-02 17:33:04,353 - INFO - Data shape: (190474, 41)
+ 2025-05-02 17:33:04,354 - INFO - Data types:
 crash_date                       datetime64[ns]
 crash_time                               object
 zip_code                                 object
@@ -439,30 +367,30 @@ total_killed                            float64
 severity                                 object
 location_type                            object
 dtype: object
- 2025-04-26 15:19:21,201 - INFO - Column names: ['crash_date', 'crash_time', 'zip_code', 'latitude', 'longitude', 'location', 'on_street_name', 'cross_street_name', 'off_street_name', 'number_of_persons_injured', 'number_of_persons_killed', 'number_of_pedestrians_injured', 'number_of_pedestrians_killed', 'number_of_cyclist_injured', 'number_of_cyclist_killed', 'number_of_motorist_injured', 'number_of_motorist_killed', 'contributing_factor_vehicle_1', 'contributing_factor_vehicle_2', 'contributing_factor_vehicle_3', 'contributing_factor_vehicle_4', 'contributing_factor_vehicle_5', 'collision_id', 'vehicle_type_code_1', 'vehicle_type_code_2', 'vehicle_type_code_3', 'vehicle_type_code_4', 'vehicle_type_code_5', 'crash_hour', 'crash_day', 'crash_month', 'crash_year', 'holiday_name', 'is_public_holiday', 'Number_of_involved_Vehicles', 'geometry', 'BoroName', 'total_injured', 'total_killed', 'severity', 'location_type']
- 2025-04-26 15:19:23,876 - INFO - Missing values percentage 
-contributing_factor_vehicle_5    99.975809
-contributing_factor_vehicle_4    99.912650
-vehicle_type_code_5              99.553625
-contributing_factor_vehicle_3    99.540688
-vehicle_type_code_4              98.404082
-holiday_name                     97.606307
-vehicle_type_code_3              93.085338
-contributing_factor_vehicle_2    86.778657
-off_street_name                  81.952881
-cross_street_name                37.556474
-contributing_factor_vehicle_1    33.801621
-zip_code                         23.979419
-on_street_name                   21.267983
-vehicle_type_code_2              19.744323
-crash_year                        0.000000
-crash_month                       0.000000
-crash_day                         0.000000
+ 2025-05-02 17:33:04,354 - INFO - Column names: ['crash_date', 'crash_time', 'zip_code', 'latitude', 'longitude', 'location', 'on_street_name', 'cross_street_name', 'off_street_name', 'number_of_persons_injured', 'number_of_persons_killed', 'number_of_pedestrians_injured', 'number_of_pedestrians_killed', 'number_of_cyclist_injured', 'number_of_cyclist_killed', 'number_of_motorist_injured', 'number_of_motorist_killed', 'contributing_factor_vehicle_1', 'contributing_factor_vehicle_2', 'contributing_factor_vehicle_3', 'contributing_factor_vehicle_4', 'contributing_factor_vehicle_5', 'collision_id', 'vehicle_type_code_1', 'vehicle_type_code_2', 'vehicle_type_code_3', 'vehicle_type_code_4', 'vehicle_type_code_5', 'crash_hour', 'crash_day', 'crash_month', 'crash_year', 'holiday_name', 'is_public_holiday', 'Number_of_involved_Vehicles', 'geometry', 'BoroName', 'total_injured', 'total_killed', 'severity', 'location_type']
+ 2025-05-02 17:33:04,651 - INFO - Missing values percentage 
+contributing_factor_vehicle_5    99.959575
+contributing_factor_vehicle_4    99.860348
+contributing_factor_vehicle_3    99.371568
+vehicle_type_code_5              99.287042
+holiday_name                     98.755736
+vehicle_type_code_4              97.706249
+vehicle_type_code_3              91.588353
+contributing_factor_vehicle_2    87.786260
+off_street_name                  70.484161
+cross_street_name                48.095278
+vehicle_type_code_2              33.027080
+on_street_name                   29.515839
+zip_code                         25.154614
+contributing_factor_vehicle_1    25.108414
 Number_of_involved_Vehicles       0.000000
 geometry                          0.000000
 BoroName                          0.000000
-crash_hour                        0.000000
+crash_year                        0.000000
+crash_month                       0.000000
+crash_day                         0.000000
 total_injured                     0.000000
+crash_hour                        0.000000
 total_killed                      0.000000
 severity                          0.000000
 is_public_holiday                 0.000000
@@ -483,346 +411,346 @@ longitude                         0.000000
 latitude                          0.000000
 location_type                     0.000000
 dtype: float64
- 2025-04-26 15:19:23,886 - INFO - 
+ 2025-05-02 17:33:04,663 - INFO - 
    crash_date crash_time zip_code   latitude  longitude  \
-2  2023-11-01   01:29:00    11230  40.621790 -73.970024   
-9  2021-09-11   09:35:00    11208  40.667202 -73.866500   
-12 2021-12-14   17:05:00      NaN  40.709183 -73.956825   
-13 2021-12-14   08:17:00    10475  40.868160 -73.831480   
-14 2021-12-14   21:10:00    11207  40.671720 -73.897100   
-15 2021-12-14   14:58:00    10017  40.751440 -73.973970   
-16 2021-12-13   00:34:00      NaN  40.701275 -73.888870   
-17 2021-12-14   16:50:00    11413  40.675884 -73.755770   
-19 2021-12-14   00:59:00      NaN  40.596620 -74.002310   
-20 2021-12-14   23:10:00    11434  40.666840 -73.789410   
-21 2021-12-14   17:58:00    11217  40.681580 -73.974630   
-22 2021-12-14   20:03:00    11226  40.650680 -73.958810   
-24 2021-12-11   19:43:00    10463  40.872620 -73.904686   
-25 2021-12-14   14:30:00      NaN  40.783268 -73.824850   
-26 2021-12-11   04:45:00    10001  40.748917 -73.993546   
-27 2021-12-14   05:46:00      NaN  40.744644 -73.770410   
-28 2021-12-13   06:30:00    11372  40.753730 -73.885050   
-29 2021-12-14   03:43:00      NaN  40.804375 -73.937420   
-30 2021-12-13   17:40:00    10301  40.631650 -74.087620   
-31 2021-12-14   17:31:00    11230  40.623104 -73.958090   
+0  2023-11-01   01:29:00    11230  40.621790 -73.970024   
+10 2024-10-05   12:40:00      NaN  40.642540 -73.876520   
+11 2023-01-11   08:44:00    11373  40.748367 -73.876930   
+12 2023-01-17   08:23:00    11223  40.592407 -73.966810   
+13 2023-01-17   15:21:00      NaN  40.651330 -73.906070   
+14 2023-01-17   21:05:00    10453  40.846980 -73.910650   
+15 2023-01-17   09:18:00      NaN  40.572750 -73.997055   
+16 2023-01-16   03:20:00      NaN  40.677715 -73.935870   
+17 2023-01-17   20:00:00    11377  40.746334 -73.896330   
+18 2023-01-17   12:30:00    11375  40.729500 -73.845710   
+19 2023-01-17   10:30:00    11216  40.681484 -73.940636   
+21 2023-01-17   12:10:00    11217  40.680210 -73.975845   
+22 2023-01-01   05:30:00      NaN  40.710514 -73.956140   
+23 2023-01-16   15:20:00    11221  40.694496 -73.914820   
+24 2023-01-17   21:22:00      NaN  40.731810 -73.866646   
+25 2023-01-17   11:16:00    10036  40.755154 -73.980860   
+26 2023-01-17   14:35:00    11203  40.650467 -73.924430   
+28 2023-01-17   06:42:00      NaN  40.669290 -73.842445   
+29 2023-01-12   16:59:00    11693  40.587433 -73.812325   
+30 2023-01-17   20:20:00    10301  40.631650 -74.087620   
 
                    location              on_street_name cross_street_name  \
-2    (40.62179, -73.970024)               OCEAN PARKWAY          AVENUE K   
-9     (40.667202, -73.8665)                         NaN               NaN   
-12  (40.709183, -73.956825)  BROOKLYN QUEENS EXPRESSWAY               NaN   
-13    (40.86816, -73.83148)                         NaN               NaN   
-14     (40.67172, -73.8971)                         NaN               NaN   
-15    (40.75144, -73.97397)                    3 AVENUE    EAST 43 STREET   
-16   (40.701275, -73.88887)               MYRTLE AVENUE               NaN   
-17   (40.675884, -73.75577)       SPRINGFIELD BOULEVARD   EAST GATE PLAZA   
-19    (40.59662, -74.00231)                BELT PARKWAY               NaN   
-20    (40.66684, -73.78941)        NORTH CONDUIT AVENUE        150 STREET   
-21    (40.68158, -73.97463)                         NaN               NaN   
-22    (40.65068, -73.95881)                         NaN               NaN   
-24   (40.87262, -73.904686)       WEST KINGSBRIDGE ROAD      HEATH AVENUE   
-25   (40.783268, -73.82485)       WHITESTONE EXPRESSWAY               NaN   
-26  (40.748917, -73.993546)                         NaN               NaN   
-27   (40.744644, -73.77041)      LONG ISLAND EXPRESSWAY               NaN   
-28    (40.75373, -73.88505)                   82 STREET         34 AVENUE   
-29   (40.804375, -73.93742)            LEXINGTON AVENUE               NaN   
+0    (40.62179, -73.970024)               OCEAN PARKWAY          AVENUE K   
+10    (40.64254, -73.87652)                BELT PARKWAY               NaN   
+11   (40.748367, -73.87693)            ROOSEVELT AVENUE       CASE STREET   
+12   (40.592407, -73.96681)                         NaN               NaN   
+13    (40.65133, -73.90607)                    AVENUE D               NaN   
+14    (40.84698, -73.91065)               WALTON AVENUE   EAST 175 STREET   
+15   (40.57275, -73.997055)                 SURF AVENUE               NaN   
+16   (40.677715, -73.93587)             ATLANTIC AVENUE               NaN   
+17   (40.746334, -73.89633)                   69 STREET  ROOSEVELT AVENUE   
+18     (40.7295, -73.84571)                  110 STREET         67 AVENUE   
+19  (40.681484, -73.940636)                         NaN               NaN   
+21   (40.68021, -73.975845)                         NaN               NaN   
+22   (40.710514, -73.95614)  BROOKLYN QUEENS EXPRESSWAY               NaN   
+23   (40.694496, -73.91482)             WOODBINE STREET     WILSON AVENUE   
+24   (40.73181, -73.866646)            QUEENS BOULEVARD         62 AVENUE   
+25   (40.755154, -73.98086)                         NaN               NaN   
+26   (40.650467, -73.92443)               SNYDER AVENUE    EAST 56 STREET   
+28   (40.66929, -73.842445)         CROSS BAY BOULEVARD               NaN   
+29  (40.587433, -73.812325)                         NaN               NaN   
 30    (40.63165, -74.08762)           VICTORY BOULEVARD  WOODSTOCK AVENUE   
-31   (40.623104, -73.95809)              EAST 18 STREET          AVENUE K   
 
-                off_street_name  number_of_persons_injured  \
-2                           NaN                          1   
-9       1211      LORING AVENUE                          0   
-12                          NaN                          0   
-13  344       BAYCHESTER AVENUE                          2   
-14      2047      PITKIN AVENUE                          0   
-15                          NaN                          0   
-16                          NaN                          0   
-17                          NaN                          0   
-19                          NaN                          0   
-20                          NaN                          2   
-21        480       DEAN STREET                          0   
-22    878       FLATBUSH AVENUE                          4   
-24                          NaN                          1   
-25                          NaN                          0   
-26     232       WEST 30 STREET                          0   
-27                          NaN                          1   
-28                          NaN                          0   
-29                          NaN                          1   
-30                          NaN                          1   
-31                          NaN                          1   
+                       off_street_name  number_of_persons_injured  \
+0                                  NaN                          1   
+10                                 NaN                          2   
+11                                 NaN                          1   
+12             2366      EAST 4 STREET                          0   
+13                                 NaN                          1   
+14                                 NaN                          1   
+15                                 NaN                          0   
+16                                 NaN                          4   
+17                                 NaN                          0   
+18                                 NaN                          0   
+19             599       THROOP AVENUE                          0   
+21        52        SAINT MARKS AVENUE                          0   
+22                                 NaN                          0   
+23                                 NaN                          0   
+24                                 NaN                          0   
+25            20        WEST 44 STREET                          0   
+26                                 NaN                          3   
+28                                 NaN                          1   
+29  87-04     ROCKAWAY BEACH BOULEVARD                          0   
+30                                 NaN                          0   
 
     number_of_persons_killed  number_of_pedestrians_injured  \
-2                          0                              0   
-9                          0                              0   
+0                          0                              0   
+10                         0                              0   
+11                         0                              0   
 12                         0                              0   
 13                         0                              0   
-14                         0                              0   
+14                         0                              1   
 15                         0                              0   
 16                         0                              0   
 17                         0                              0   
+18                         0                              0   
 19                         0                              0   
-20                         0                              0   
 21                         0                              0   
 22                         0                              0   
+23                         0                              0   
 24                         0                              0   
 25                         0                              0   
 26                         0                              0   
-27                         0                              0   
 28                         0                              0   
-29                         0                              1   
+29                         0                              0   
 30                         0                              0   
-31                         0                              1   
 
     number_of_pedestrians_killed  number_of_cyclist_injured  \
-2                              0                          0   
-9                              0                          0   
+0                              0                          0   
+10                             0                          1   
+11                             0                          0   
 12                             0                          0   
 13                             0                          0   
 14                             0                          0   
 15                             0                          0   
 16                             0                          0   
 17                             0                          0   
+18                             0                          0   
 19                             0                          0   
-20                             0                          0   
 21                             0                          0   
 22                             0                          0   
+23                             0                          0   
 24                             0                          0   
 25                             0                          0   
 26                             0                          0   
-27                             0                          0   
 28                             0                          0   
 29                             0                          0   
 30                             0                          0   
-31                             0                          0   
 
     number_of_cyclist_killed  number_of_motorist_injured  \
-2                          0                           1   
-9                          0                           0   
+0                          0                           1   
+10                         0                           0   
+11                         0                           0   
 12                         0                           0   
-13                         0                           2   
+13                         0                           1   
 14                         0                           0   
 15                         0                           0   
-16                         0                           0   
+16                         0                           4   
 17                         0                           0   
+18                         0                           0   
 19                         0                           0   
-20                         0                           2   
 21                         0                           0   
-22                         0                           4   
-24                         0                           1   
+22                         0                           0   
+23                         0                           0   
+24                         0                           0   
 25                         0                           0   
-26                         0                           0   
-27                         0                           1   
-28                         0                           0   
+26                         0                           3   
+28                         0                           1   
 29                         0                           0   
-30                         0                           1   
-31                         0                           0   
+30                         0                           0   
 
     number_of_motorist_killed   contributing_factor_vehicle_1  \
-2                           0                            None   
-9                           0                            None   
-12                          0             passing too closely   
-13                          0                            None   
-14                          0             driver inexperience   
-15                          0             passing too closely   
-16                          0  passing or lane usage improper   
-17                          0              turning improperly   
-19                          0                    unsafe speed   
-20                          0  reaction to uninvolved vehicle   
+0                           0                            None   
+10                          0                            None   
+11                          0              turning improperly   
+12                          0                            None   
+13                          0  driver inattention/distraction   
+14                          0                backing unsafely   
+15                          0  driver inattention/distraction   
+16                          0  driver inattention/distraction   
+17                          0  driver inattention/distraction   
+18                          0                            None   
+19                          0  reaction to uninvolved vehicle   
 21                          0             passing too closely   
-22                          0                steering failure   
-24                          0                            None   
-25                          0           following too closely   
+22                          0           following too closely   
+23                          0  passing or lane usage improper   
+24                          0  driver inattention/distraction   
+25                          0                backing unsafely   
 26                          0           following too closely   
-27                          0                 other vehicular   
-28                          0                            None   
-29                          0                            None   
-30                          0                            None   
-31                          0                            None   
+28                          0              turning improperly   
+29                          0           following too closely   
+30                          0              turning improperly   
 
-   contributing_factor_vehicle_2 contributing_factor_vehicle_3  \
-2                           None                          None   
-9                           None                          None   
-12                          None                          None   
-13                          None                          None   
-14                          None                          None   
-15                          None                          None   
-16                          None                          None   
-17                          None                          None   
-19                          None                          None   
-20                          None                          None   
-21                          None                          None   
-22                          None                          None   
-24                          None                          None   
-25                          None                          None   
-26                          None                          None   
-27               other vehicular                          None   
-28                          None                          None   
-29                          None                          None   
-30                          None                          None   
-31                          None                          None   
+     contributing_factor_vehicle_2 contributing_factor_vehicle_3  \
+0                             None                          None   
+10                            None                          None   
+11                            None                          None   
+12                            None                          None   
+13                            None                          None   
+14                            None                          None   
+15                            None                          None   
+16  driver inattention/distraction                          None   
+17                            None                          None   
+18                            None                          None   
+19                            None                          None   
+21                            None                          None   
+22                            None                          None   
+23                            None                          None   
+24                            None                          None   
+25                            None                          None   
+26                            None                          None   
+28                            None                          None   
+29           following too closely                          None   
+30                            None                          None   
 
    contributing_factor_vehicle_4 contributing_factor_vehicle_5  collision_id  \
-2                           None                          None       4675373   
-9                           None                          None       4456314   
-12                          None                          None       4486555   
-13                          None                          None       4486660   
-14                          None                          None       4487074   
-15                          None                          None       4486519   
-16                          None                          None       4486934   
-17                          None                          None       4487127   
-19                          None                          None       4486564   
-20                          None                          None       4486635   
-21                          None                          None       4486604   
-22                          None                          None       4486991   
-24                          None                          None       4487040   
-25                          None                          None       4486537   
-26                          None                          None       4486905   
-27                          None                          None       4487122   
-28                          None                          None       4486967   
-29                          None                          None       4486304   
-30                          None                          None       4487001   
-31                          None                          None       4486516   
+0                           None                          None       4675373   
+10                          None                          None       4761266   
+11                          None                          None       4597404   
+12                          None                          None       4598445   
+13                          None                          None       4598521   
+14                          None                          None       4598669   
+15                          None                          None       4598912   
+16                          None                          None       4599046   
+17                          None                          None       4598579   
+18                          None                          None       4598613   
+19                          None                          None       4598487   
+21                          None                          None       4598966   
+22                          None                          None       4599014   
+23                          None                          None       4599155   
+24                          None                          None       4598770   
+25                          None                          None       4598813   
+26                          None                          None       4598638   
+28                          None                          None       4598587   
+29                          None                          None       4599036   
+30                          None                          None       4598862   
 
                     vehicle_type_code_1                  vehicle_type_code_2  \
-2                                 Moped                                Sedan   
-9                                 Sedan                                  NaN   
-12                                Sedan                 Tractor Truck Diesel   
-13                                Sedan                                Sedan   
-14                                Sedan                                  NaN   
+0                                 Moped                                Sedan   
+10                                 Bike                               E-Bike   
+11                                Sedan                                  NaN   
+12                                Sedan                                  NaN   
+13  Station Wagon/Sport Utility Vehicle                                Sedan   
+14                                Sedan  Station Wagon/Sport Utility Vehicle   
 15                                Sedan  Station Wagon/Sport Utility Vehicle   
-16  Station Wagon/Sport Utility Vehicle                                  NaN   
-17                                Sedan  Station Wagon/Sport Utility Vehicle   
-19                                Sedan                                  NaN   
-20                                Sedan                                Sedan   
-21                               Tanker  Station Wagon/Sport Utility Vehicle   
+16                                Sedan                                Sedan   
+17                                  Bus                        Pick-up Truck   
+18  Station Wagon/Sport Utility Vehicle                                Sedan   
+19  Station Wagon/Sport Utility Vehicle  Station Wagon/Sport Utility Vehicle   
+21  Station Wagon/Sport Utility Vehicle  Station Wagon/Sport Utility Vehicle   
 22                                Sedan                                  NaN   
-24  Station Wagon/Sport Utility Vehicle                                Sedan   
-25  Station Wagon/Sport Utility Vehicle                                Sedan   
-26  Station Wagon/Sport Utility Vehicle                                  NaN   
-27  Station Wagon/Sport Utility Vehicle  Station Wagon/Sport Utility Vehicle   
-28                                Sedan                                  NaN   
-29  Station Wagon/Sport Utility Vehicle                                  NaN   
+23                                Sedan                                Sedan   
+24               Tractor Truck Gasoline                                  NaN   
+25                                Sedan                                Sedan   
+26  Station Wagon/Sport Utility Vehicle                                  Van   
+28  Station Wagon/Sport Utility Vehicle                                Sedan   
+29  Station Wagon/Sport Utility Vehicle                        Pick-up Truck   
 30                                Sedan                                Sedan   
-31                                Sedan                                  NaN   
 
    vehicle_type_code_3 vehicle_type_code_4 vehicle_type_code_5  crash_hour  \
-2                Sedan                 NaN                 NaN           1   
-9                  NaN                 NaN                 NaN           9   
-12                 NaN                 NaN                 NaN          17   
-13                 NaN                 NaN                 NaN           8   
+0                Sedan                 NaN                 NaN           1   
+10                 NaN                 NaN                 NaN          12   
+11                 NaN                 NaN                 NaN           8   
+12                 NaN                 NaN                 NaN           8   
+13                 NaN                 NaN                 NaN          15   
 14                 NaN                 NaN                 NaN          21   
-15                 NaN                 NaN                 NaN          14   
-16                 NaN                 NaN                 NaN           0   
-17                 NaN                 NaN                 NaN          16   
-19                 NaN                 NaN                 NaN           0   
-20                 NaN                 NaN                 NaN          23   
-21                 NaN                 NaN                 NaN          17   
-22                 NaN                 NaN                 NaN          20   
-24                 NaN                 NaN                 NaN          19   
-25               Sedan                 NaN                 NaN          14   
-26                 NaN                 NaN                 NaN           4   
-27                 NaN                 NaN                 NaN           5   
+15                 NaN                 NaN                 NaN           9   
+16               Sedan                 NaN                 NaN           3   
+17                 NaN                 NaN                 NaN          20   
+18                 NaN                 NaN                 NaN          12   
+19               Sedan                 NaN                 NaN          10   
+21           Box Truck                 NaN                 NaN          12   
+22                 NaN                 NaN                 NaN           5   
+23                 NaN                 NaN                 NaN          15   
+24                 NaN                 NaN                 NaN          21   
+25                 NaN                 NaN                 NaN          11   
+26                 NaN                 NaN                 NaN          14   
 28                 NaN                 NaN                 NaN           6   
-29                 NaN                 NaN                 NaN           3   
-30                 NaN                 NaN                 NaN          17   
-31                 NaN                 NaN                 NaN          17   
+29                 NaN                 NaN                 NaN          16   
+30                 NaN                 NaN                 NaN          20   
 
-    crash_day crash_month  crash_year holiday_name  is_public_holiday  \
-2   Wednesday    November        2023          NaN                  0   
-9    Saturday   September        2021          NaN                  0   
-12    Tuesday    December        2021          NaN                  0   
-13    Tuesday    December        2021          NaN                  0   
-14    Tuesday    December        2021          NaN                  0   
-15    Tuesday    December        2021          NaN                  0   
-16     Monday    December        2021          NaN                  0   
-17    Tuesday    December        2021          NaN                  0   
-19    Tuesday    December        2021          NaN                  0   
-20    Tuesday    December        2021          NaN                  0   
-21    Tuesday    December        2021          NaN                  0   
-22    Tuesday    December        2021          NaN                  0   
-24   Saturday    December        2021          NaN                  0   
-25    Tuesday    December        2021          NaN                  0   
-26   Saturday    December        2021          NaN                  0   
-27    Tuesday    December        2021          NaN                  0   
-28     Monday    December        2021          NaN                  0   
-29    Tuesday    December        2021          NaN                  0   
-30     Monday    December        2021          NaN                  0   
-31    Tuesday    December        2021          NaN                  0   
+    crash_day crash_month  crash_year                 holiday_name  \
+0   Wednesday    November        2023                          NaN   
+10   Saturday     October        2024                          NaN   
+11  Wednesday     January        2023                          NaN   
+12    Tuesday     January        2023                          NaN   
+13    Tuesday     January        2023                          NaN   
+14    Tuesday     January        2023                          NaN   
+15    Tuesday     January        2023                          NaN   
+16     Monday     January        2023  Martin Luther King, Jr. Day   
+17    Tuesday     January        2023                          NaN   
+18    Tuesday     January        2023                          NaN   
+19    Tuesday     January        2023                          NaN   
+21    Tuesday     January        2023                          NaN   
+22     Sunday     January        2023                          NaN   
+23     Monday     January        2023  Martin Luther King, Jr. Day   
+24    Tuesday     January        2023                          NaN   
+25    Tuesday     January        2023                          NaN   
+26    Tuesday     January        2023                          NaN   
+28    Tuesday     January        2023                          NaN   
+29   Thursday     January        2023                          NaN   
+30    Tuesday     January        2023                          NaN   
 
-    Number_of_involved_Vehicles                    geometry       BoroName  \
-2                             3  POINT (-73.97002 40.62179)       Brooklyn   
-9                             1    POINT (-73.8665 40.6672)       Brooklyn   
-12                            2  POINT (-73.95682 40.70918)       Brooklyn   
-13                            2  POINT (-73.83148 40.86816)          Bronx   
-14                            1   POINT (-73.8971 40.67172)       Brooklyn   
-15                            2  POINT (-73.97397 40.75144)      Manhattan   
-16                            1  POINT (-73.88887 40.70128)         Queens   
-17                            2  POINT (-73.75577 40.67588)         Queens   
-19                            1  POINT (-74.00231 40.59662)       Brooklyn   
-20                            2  POINT (-73.78941 40.66684)         Queens   
-21                            2  POINT (-73.97463 40.68158)       Brooklyn   
-22                            1  POINT (-73.95881 40.65068)       Brooklyn   
-24                            2  POINT (-73.90469 40.87262)          Bronx   
-25                            3  POINT (-73.82485 40.78327)         Queens   
-26                            1  POINT (-73.99355 40.74892)      Manhattan   
-27                            2  POINT (-73.77041 40.74464)         Queens   
-28                            1  POINT (-73.88505 40.75373)         Queens   
-29                            1  POINT (-73.93742 40.80438)      Manhattan   
-30                            2  POINT (-74.08762 40.63165)  Staten Island   
-31                            1   POINT (-73.95809 40.6231)       Brooklyn   
+    is_public_holiday  Number_of_involved_Vehicles  \
+0                   0                            3   
+10                  0                            2   
+11                  0                            1   
+12                  0                            1   
+13                  0                            2   
+14                  0                            2   
+15                  0                            2   
+16                  1                            3   
+17                  0                            2   
+18                  0                            2   
+19                  0                            3   
+21                  0                            3   
+22                  0                            1   
+23                  1                            2   
+24                  0                            1   
+25                  0                            2   
+26                  0                            2   
+28                  0                            2   
+29                  0                            2   
+30                  0                            2   
 
-    total_injured  total_killed     severity location_type  
-2             2.0           0.0       Injury  intersection  
-9             0.0           0.0  No Casualty    off_street  
-12            0.0           0.0  No Casualty     mid_block  
-13            4.0           0.0       Injury    off_street  
-14            0.0           0.0  No Casualty    off_street  
-15            0.0           0.0  No Casualty  intersection  
-16            0.0           0.0  No Casualty     mid_block  
-17            0.0           0.0  No Casualty  intersection  
-19            0.0           0.0  No Casualty     mid_block  
-20            4.0           0.0       Injury  intersection  
-21            0.0           0.0  No Casualty    off_street  
-22            8.0           0.0       Injury    off_street  
-24            2.0           0.0       Injury  intersection  
-25            0.0           0.0  No Casualty     mid_block  
-26            0.0           0.0  No Casualty    off_street  
-27            2.0           0.0       Injury     mid_block  
-28            0.0           0.0  No Casualty  intersection  
-29            2.0           0.0       Injury     mid_block  
-30            2.0           0.0       Injury  intersection  
-31            2.0           0.0       Injury  intersection  
- 2025-04-26 15:19:23,886 - INFO - Final Result
- 2025-04-26 15:19:30,076 - INFO - crash_month  January  February  March  April    May   June   July  August  \
-crash_year                                                                  
-2012               0         0      0      0      0      0  14468   14505   
-2013           13256     12253  14062  13987  15788  15404  14648   13955   
-2014           14012     13150  13292  13618  15071  15363  14470   14181   
-2015           13696     12201  15275  14207  16236  15766  15851   15944   
-2016           15406     13536  11869   7580  16712  17294  16703   18063   
-2017           16204     14722  18005  16438  19440  19793  18039   17443   
-2018           16782     14675  17673  16750  19131  19186  18160   18089   
-2019           15395     14622  16208  15273  17801  17729  16819   15689   
-2020           13096     12455  10082   3757   5639   6966   8438    8954   
-2021            7017      6371   7035   7990   9290   9655   9108    8877   
-2022            7182      6357   7993   7109   7714   8323   8010    8102   
-2023            6747      6283   7374   6999   8006   7465   7484    7287   
-2024            6945      6279   7205   6565   7580   7379   6605    6205   
-2025            6040      5595   6527   2953      0      0      0       0   
+                      geometry       BoroName  total_injured  total_killed  \
+0   POINT (-73.97002 40.62179)       Brooklyn            2.0           0.0   
+10  POINT (-73.87652 40.64254)       Brooklyn            3.0           0.0   
+11  POINT (-73.87693 40.74837)         Queens            1.0           0.0   
+12  POINT (-73.96681 40.59241)       Brooklyn            0.0           0.0   
+13  POINT (-73.90607 40.65133)       Brooklyn            2.0           0.0   
+14  POINT (-73.91065 40.84698)          Bronx            2.0           0.0   
+15  POINT (-73.99706 40.57275)       Brooklyn            0.0           0.0   
+16  POINT (-73.93587 40.67772)       Brooklyn            8.0           0.0   
+17  POINT (-73.89633 40.74633)         Queens            0.0           0.0   
+18   POINT (-73.84571 40.7295)         Queens            0.0           0.0   
+19  POINT (-73.94064 40.68148)       Brooklyn            0.0           0.0   
+21  POINT (-73.97584 40.68021)       Brooklyn            0.0           0.0   
+22  POINT (-73.95614 40.71051)       Brooklyn            0.0           0.0   
+23   POINT (-73.91482 40.6945)       Brooklyn            0.0           0.0   
+24  POINT (-73.86665 40.73181)         Queens            0.0           0.0   
+25  POINT (-73.98086 40.75515)      Manhattan            0.0           0.0   
+26  POINT (-73.92443 40.65047)       Brooklyn            6.0           0.0   
+28  POINT (-73.84244 40.66929)         Queens            2.0           0.0   
+29  POINT (-73.81232 40.58743)         Queens            0.0           0.0   
+30  POINT (-74.08762 40.63165)  Staten Island            0.0           0.0   
+
+       severity location_type  
+0        Injury  intersection  
+10       Injury     mid_block  
+11       Injury  intersection  
+12  No Casualty    off_street  
+13       Injury     mid_block  
+14       Injury  intersection  
+15  No Casualty     mid_block  
+16       Injury     mid_block  
+17  No Casualty  intersection  
+18  No Casualty  intersection  
+19  No Casualty    off_street  
+21  No Casualty    off_street  
+22  No Casualty     mid_block  
+23  No Casualty  intersection  
+24  No Casualty  intersection  
+25  No Casualty    off_street  
+26       Injury  intersection  
+28       Injury     mid_block  
+29  No Casualty    off_street  
+30  No Casualty  intersection  
+ 2025-05-02 17:33:04,679 - INFO - Final Result
+ 2025-05-02 17:33:06,427 - INFO - crash_month  January  February  March  April   May  June  July  August  \
+crash_year                                                               
+2023            6747      6283   7374   6999  8006  7465  7484    7287   
+2024            6945      6279   7205   6565  7580  7379  6605    6205   
+2025            6040      5595   6527   2953     0     0     0       0   
 
 crash_month  September  October  November  December  
 crash_year                                           
-2012             14087    14268     13452     14561  
-2013             14177    14811     14807     14415  
-2014             14794    15163     14249     14473  
-2015             15660    16769     15236     15801  
-2016             17923    17920     17814     17724  
-2017             17817    18470     18021     18174  
-2018             17707    18901     17766     17696  
-2019             16030    15889     15343     15441  
-2020              8664     8793      8211      7614  
-2021              8799     9162      8507      7748  
-2022              8081     7983      7357      7379  
 2023              7528     7852      7140      7246  
 2024              6370     6811      6875      7129  
 2025                 0        0         0         0  
- 2025-04-26 15:19:31,193 - INFO - Execution Time is 53.00919151306152
+ 2025-05-02 17:33:06,660 - INFO - Execution Time is 18.22639036178589
